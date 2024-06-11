@@ -1,0 +1,18 @@
+<mat-card class="anime-card">
+  <audio controls>
+    <source src="{{'assets/audios/' + anime?.audio}}" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+  <mat-form-field class="example-form-field" appearance="outline">
+    <mat-label>¿Cuál es el anime?</mat-label>
+    <input matInput type="text" [formControl]="anime?.form">
+    @if (anime?.form?.value) {
+      <button matSuffix mat-icon-button aria-label="Clear" (click)="anime?.form.setValue('')">
+        <mat-icon>close</mat-icon>
+      </button>
+    }
+    </mat-form-field>
+      @if (anime?.form.value?.trim()?.toLowerCase() === anime?.name?.toLowerCase()) {
+        <div class="success">Correcto! ✔️</div>
+      }
+</mat-card>
