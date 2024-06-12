@@ -7,6 +7,32 @@
   gap: 25px;
 }
 
-.center {
-  text-align: center;
+mat-list-item {
+  list-style-type: disc; /* Esto agregará un punto sólido, similar a un guión */
+  display: list-item;
 }
+
+/* O puedes personalizarlo aún más con algo como esto: */
+mat-list-item::before {
+  content: '- '; /* Esto agregará un guión antes del texto de cada elemento */
+  padding-right: 5px; /* Ajusta el espacio entre el guión y el texto */
+}
+
+.rules-panel {
+  margin: 20px 40px;
+}
+
+.success-container {
+  display: flex;
+  justify-content: end;
+  padding-left: 40px;
+  padding-right: 115px;
+}
+
+.chip-successes {
+  background-color: #b6d4ff !important;
+  position: fixed;
+  right: 40px;
+  z-index: 1;
+}
+

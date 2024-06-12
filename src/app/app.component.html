@@ -1,13 +1,29 @@
 <h1 class="center">Anime Openings Quiz</h1>
 
-<div class="center">Los nombres deben coincidir como están registrados en <a href="https://myanimelist.net/"
-    target="_blank">MyAnimeList</a>
+<mat-expansion-panel class="rules-panel">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Reglas
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <mat-list role="list">
+    @for (rule of rules; track rule;) {
+      <mat-list-item role="listitem" [innerHTML]="rule"></mat-list-item>
+    }
+  </mat-list>
+</mat-expansion-panel>
+
+<div class="success-container">
+  <div class="relative d-flex">
+    <span>Aciertos: </span>
+    <mat-chip class="chip-successes">{{successes}} / {{animes.length}}</mat-chip>
+  </div>
 </div>
 
 <div class="app-container">
   <!-- Otros elementos de tu AppComponent -->
   @for (anime of animes; track anime) {
-  <app-anime-quiz-card [anime]="anime"></app-anime-quiz-card>
+  <app-anime-quiz-card [anime]="anime" [index]="$index"></app-anime-quiz-card>
   }
   <!-- Más contenido de tu AppComponent -->
 </div>

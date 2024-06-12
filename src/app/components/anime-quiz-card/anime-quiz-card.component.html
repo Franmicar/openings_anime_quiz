@@ -1,6 +1,9 @@
 <mat-card class="anime-card">
+  <mat-card-header>
+    <mat-card-title>Opening {{index + 1}}</mat-card-title>
+  </mat-card-header>
   <audio controls>
-    <source src="{{'assets/audios/' + anime?.audio}}" type="audio/mpeg">
+    <source src="{{'assets/audios/' + anime?.audio + '.mp3'}}" type="audio/mpeg">
     Tu navegador no soporta el elemento de audio.
   </audio>
   <mat-form-field class="example-form-field" appearance="outline">
@@ -11,8 +14,9 @@
         <mat-icon>close</mat-icon>
       </button>
     }
+    <mat-error>{{errors[randomIndex]}}</mat-error>
     </mat-form-field>
-      @if (anime?.form.value?.trim()?.toLowerCase() === anime?.name?.toLowerCase()) {
+      @if (success) {
         <div class="success">Correcto! ✔️</div>
       }
 </mat-card>
