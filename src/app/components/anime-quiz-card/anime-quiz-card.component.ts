@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -6,6 +6,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { DataService } from '../../services/data.service';
+import { debounceTime } from 'rxjs';
 
 @Component({
   selector: 'app-anime-quiz-card',
@@ -18,12 +19,13 @@ export class AnimeQuizCardComponent implements OnInit {
 
   @Input() anime: any;
   @Input() index: number = 0;
+  @Output() plus: EventEmitter<any> = new EventEmitter<any>();
 
   errors = [];
   randomIndex: number = 0;
   success = false;
 
-  constructor(private data: DataService) {}
+  constructor(private data: DataService) { }
 
   ngOnInit(): void {
     this.data.getErrors().subscribe(errors => {
@@ -31,11 +33,15 @@ export class AnimeQuizCardComponent implements OnInit {
       this.getRandomIndex();
     });
 
-    this.success = this.anime.names.some((name:string) => this.anime.form.value.trim()?.toLowerCase() === name.toLowerCase());
+    this.success = this.anime.names.some((name: string) => this.anime.form.value.trim()?.toLowerCase() === name.toLowerCase());
 
-    this.anime.form.valueChanges.subscribe((value:string) => {
-      this.success = this.anime.names.some((name:string) => value.trim()?.toLowerCase() === name.toLowerCase());
+    this.anime.form.valueChanges.pipe(
+      debounceTime(500) // Espera 5 segundos después del último cambio
+    ).subscribe((value: string) => {
+      // Estas acciones ahora solo se ejecutarán después de un segundos de inactividad
+      this.success = this.anime.names.some((name: string) => value.trim()?.toLowerCase() === name.toLowerCase());
       localStorage.setItem('R' + this.index.toString(), value);
+      this.plus.emit(); // Emitir el evento
     });
   }
 

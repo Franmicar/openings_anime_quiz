@@ -23,7 +23,7 @@
 <div class="app-container">
   <!-- Otros elementos de tu AppComponent -->
   @for (anime of animes; track anime) {
-  <app-anime-quiz-card [anime]="anime" [index]="$index"></app-anime-quiz-card>
+  <app-anime-quiz-card [anime]="anime" [index]="$index" (plus)="countSuccesses()"></app-anime-quiz-card>
   }
   <!-- Más contenido de tu AppComponent -->
 </div>

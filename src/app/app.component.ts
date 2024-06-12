@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
   animes: Anime[] = animes;
   successes = 0;
 
-  constructor(private data: DataService) {}
+  constructor(private data: DataService) { }
 
   ngOnInit(): void {
     this.getData();
@@ -39,12 +39,28 @@ export class AppComponent implements OnInit {
     // Verifica si hay respuestas guardadas en localStorage
     this.animes = this.animes.map((anime, index) => {
       // Usa la respuesta guardada si está disponible, de lo contrario usa una cadena vacía
-      const respuestaInicial = localStorage.getItem('R'+ index.toString()) ? localStorage.getItem('R'+ index.toString()) : '';
-      if (respuestaInicial && anime.names.some((name:string) => respuestaInicial.trim()?.toLowerCase() === name.toLowerCase())) this.successes++
+      const respuestaInicial = localStorage.getItem('R' + index.toString()) ? localStorage.getItem('R' + index.toString()) : '';
+      if (respuestaInicial && anime.names.some((name: string) => respuestaInicial.trim()?.toLowerCase() === name.toLowerCase())) {
+        this.plusSuccesses();
+      }
       return {
         ...anime,
         form: new FormControl(respuestaInicial, [Validators.required, checkAnimeNameValidator(anime.names)])
       };
+    });
+  }
+
+  plusSuccesses() {
+    this.successes++
+  }
+
+  countSuccesses() {
+    this.successes = 0;
+    this.animes.forEach((anime, index) => {
+      const respuestaInicial = localStorage.getItem('R' + index.toString()) ? localStorage.getItem('R' + index.toString()) : '';
+      if (respuestaInicial && anime.names.some((name: string) => respuestaInicial.trim()?.toLowerCase() === name.toLowerCase())) {
+        this.plusSuccesses();
+      }
     });
   }
 
