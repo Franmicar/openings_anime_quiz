@@ -40,7 +40,7 @@ export class AnimeQuizCardComponent implements OnInit {
     ).subscribe((value: string) => {
       // Estas acciones ahora solo se ejecutarán después de un segundos de inactividad
       this.success = this.anime.names.some((name: string) => value.trim()?.toLowerCase() === name.toLowerCase());
-      localStorage.setItem('R' + this.index.toString(), value);
+      localStorage.setItem(this.anime.audio, value);
       this.plus.emit(); // Emitir el evento
     });
   }

@@ -8,7 +8,7 @@ export interface Anime {
 }
 
 export const animes: Anime[] = [
-  { names: ["Yamada-kun to Lv999 no Koi wo Suru"], audio: "au_0" },
+  { names: ["Yamada-kun to Lv999 no Koi wo Suru", "Yamada-kun to Lv999"], audio: "au_0" },
   { names: ["Hunter x Hunter"], audio: "au_1" },
   { names: ["Jujutsu Kaisen"], audio: "au_2" },
   { names: ["Shinseiki Evangelion", "Neon Genesis Evangelion"], audio: "au_3" },
@@ -31,7 +31,7 @@ export const animes: Anime[] = [
   { names: ["Mushoku Tensei: Isekai Ittara Honki Dasu", "Mushoku Tensei: Jobless Reincarnation"], audio: "au_20" },
   { names: ["No Game No Life"], audio: "au_21" },
   { names: ["Doraemon"], audio: "au_22" },
-  { names: ["Digimon"], audio: "au_23" },
+  { names: ["Digimon", "Digimon 02"], audio: "au_23" },
   { names: ["Pokemon"], audio: "au_24" },
   { names: ["Slayers"], audio: "au_25" },
   { names: ["Naruto"], audio: "au_26" },
