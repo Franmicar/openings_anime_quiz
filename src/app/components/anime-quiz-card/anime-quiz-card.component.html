@@ -17,7 +17,11 @@
     <mat-error>{{errors[randomIndex]}}</mat-error>
     </mat-form-field>
       @if (success) {
+        @if (anime.audio === 'au_31') {
+        <div class="success">Correcteiro! ✔️</div>
+        } @else {
         <div class="success">Correcto! ✔️</div>
+        }
       } @else {
         <div>❓❓❓</div>
       }
