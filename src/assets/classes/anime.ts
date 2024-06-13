@@ -124,7 +124,7 @@ export const animes: Anime[] = [
   { names: ["Houseki no Kuni", "Land of the Lustrous"], audio: "au_111" },
   { names: ["Inuyashiki", "Inuyashiki: Last Hero"], audio: "au_112" },
   { names: ["Shinsekai Yori"], audio: "au_113" },
-  { names: ["Inu x Boku SS", "Inu × Boku Secret Service"], audio: "au_114" },
+  { names: ["Inu x Boku SS", "Inu x Boku Secret Service"], audio: "au_114" },
   { names: ["Bokusatsu Tenshi Dokuro-chan", "Bludgeoning Angel Dokuro-chan"], audio: "au_115" },
   { names: ["Charlotte"], audio: "au_116" },
   { names: ["Bungou Stray Dogs", "Bungo Stray Dogs"], audio: "au_117" },
