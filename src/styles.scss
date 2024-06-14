@@ -1,7 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-image: url('assets/imgs/fondo.jpeg');
+  background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  // background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
 
 .center {
   text-align: center;
