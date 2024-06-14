@@ -1,7 +1,9 @@
 [
-  "El nombre del anime en <a href='https://myanimelist.net/' target='_blank' class='hipervinculo'>MyAnimeList</a> siempre será correcto.",
+  "Todas las canciones son openings de algún anime, la respuesta es el nombre de ese anime.",
+  "El nombre del anime en <a href='https://myanimelist.net/' target='_blank' class='hipervinculo'>MyAnimeList</a> siempre será correcto, pero en algunos casos también son válidos acotaciones del nombre y algunas traducciones.",
   "No se distingue entre minúsculas y mayúsculas.",
-  "En algunos casos hay respuestas con varios nombres válidos, como los animes muy conocidos por su nombre en Occidente.",
-  "Todas las canciones son openings.",
-  "Deben acertarse todas las canciones."
+  "Los nombres pueden contener acentos y los símbolos apóstrofe, dos puntos, guión, exclamación cerrada, punto y coma y barra.",
+  "Los openings más difíciles tienen una pista, para verla solo hay que colocar el ratón encima de la interrogación blanca que hay a la derecha del número del opening, pero eso te convertirá automáticamente en un/a parguela.",
+  "Si algún anime se resiste, habrá que mirar tops de openings en YouTube o descartar por animes conocidos.",
+  "Hay que acertar todas, sin excepción."
 ]

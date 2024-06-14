@@ -1,0 +1,19 @@
+<h2 mat-dialog-title>¡Enhorabuena!</h2>
+<mat-dialog-content>
+  <div>
+    ¡¡ESPERA!! ¡¡Antes de acabar tienes que resolver estos tres openings que no pudieron entrar en los 120!!!!
+  </div>
+  <div>
+    PD: Nos acordamos después de ellos y tienen que estar aquí si o si.
+  </div>
+  <div class="app-container">
+    <!-- Otros elementos de tu AppComponent -->
+    @for (anime of extraAnimes; track anime) {
+    <app-anime-quiz-card [anime]="anime" [index]="$index" (plus)="check()"></app-anime-quiz-card>
+    }
+    <!-- Más contenido de tu AppComponent -->
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-flat-button (click)="close(true)" [disabled]="!finished">Terminar</button>
+</mat-dialog-actions>

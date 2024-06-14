@@ -7,11 +7,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { DataService } from '../../services/data.service';
 import { debounceTime } from 'rxjs';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @Component({
   selector: 'app-anime-quiz-card',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule, MatCardModule, MatButtonModule, MatIconModule, MatFormFieldModule, MatInputModule],
+  imports: [FormsModule, ReactiveFormsModule, MatCardModule, MatButtonModule, MatIconModule, MatFormFieldModule, MatInputModule, MatTooltipModule],
   templateUrl: './anime-quiz-card.component.html',
   styleUrl: './anime-quiz-card.component.scss'
 })
@@ -28,12 +29,13 @@ export class AnimeQuizCardComponent implements OnInit {
   constructor(private data: DataService) { }
 
   ngOnInit(): void {
+    console.log(this.anime)
     this.data.getErrors().subscribe(errors => {
       this.errors = errors;
       this.getRandomIndex();
     });
 
-    this.success = this.anime.names.some((name: string) => this.anime.form.value.trim()?.toLowerCase() === name.toLowerCase());
+    this.success = this.anime.names.some((name: string) => this.anime.form?.value?.trim()?.toLowerCase() === name.toLowerCase());
 
     this.anime.form.valueChanges.pipe(
       debounceTime(500) // Espera 5 segundos después del último cambio

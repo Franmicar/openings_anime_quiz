@@ -12,6 +12,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { DeleteConfirmationComponent } from './components/modals/delete-confirmation/delete-confirmation.component';
 import { MatSelectModule } from '@angular/material/select';
+import { FinalModalComponent } from './components/modals/final-modal/final-modal.component';
 
 @Component({
   selector: 'app-root',
@@ -74,7 +75,15 @@ export class AppComponent implements OnInit {
     if (respuesta && anime.names.some((name: string) => respuesta.trim()?.toLowerCase() === name.toLowerCase())) {
       this.plusSuccesses();
     }
-    if (this.successes === this.animes.length) this.complete = true;
+    if (this.successes === this.animes.length) {
+      this.dialog.open(FinalModalComponent, {
+        width: '80vw'
+      }).afterClosed().subscribe(res => {
+        if (res) {
+          this.complete = res;
+        }
+      });
+    }
     return respuesta;
   }
 

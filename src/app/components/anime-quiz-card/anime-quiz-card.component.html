@@ -1,6 +1,11 @@
 <mat-card class="anime-card">
-  <mat-card-header>
-    <mat-card-title>Opening {{index + 1}}</mat-card-title>
+  <mat-card-header class="w-100">
+    <mat-card-title class="title-card">
+      <span>Opening {{index + 1}}</span>
+      @if (anime?.pista) {
+        <mat-icon [matTooltip]="anime?.pista" style="margin-left: 15px;">help</mat-icon>
+      }
+    </mat-card-title>
   </mat-card-header>
   <audio controls>
     <source src="{{'assets/audios/' + anime?.audio + '.mp3'}}" type="audio/mpeg">
