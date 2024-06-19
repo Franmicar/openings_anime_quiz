@@ -7,15 +7,31 @@
   gap: 25px;
 }
 
-mat-list-item {
-  list-style-type: disc; /* Esto agregará un punto sólido, similar a un guión */
-  display: list-item;
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
 }
 
-/* O puedes personalizarlo aún más con algo como esto: */
-mat-list-item::before {
-  content: '- '; /* Esto agregará un guión antes del texto de cada elemento */
-  padding-right: 5px; /* Ajusta el espacio entre el guión y el texto */
+ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  transition: background-color 0.2s ease;
+}
+
+ul li:hover {
+  background-color: #f7f7f7;
+}
+
+ul li:before {
+  font-size: 14px;
+  color: #666;
+  margin-right: 10px;
+  font-weight: normal;
 }
 
 .rules-panel {
@@ -25,15 +41,11 @@ mat-list-item::before {
 .success-container {
   display: flex;
   justify-content: space-between;
-  padding-left: 40px;
-  padding-right: 130px;
+  padding: 0 40px;
 }
 
 .chip-successes {
   background-color: #b6d4ff !important;
-  position: fixed;
-  right: 40px;
-  z-index: 1;
 }
 
 .custom-title {
@@ -63,3 +75,39 @@ mat-list-item::before {
   align-items: center;
   color: white; /* Color del texto */
 }
+
+.idol-audio {
+  opacity: 0;
+  position: absolute;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  opacity: 0; /* Inicialmente oculto */
+}
+
+.scroll-to-top.fade-in {
+  animation: fadeIn 0.3s forwards; /* Animación de fade-in */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.fixed {
+  position: fixed;
+  z-index: 1;
+  right: 25px;
+  top: 25px;
+}
+

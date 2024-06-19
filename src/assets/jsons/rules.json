@@ -3,7 +3,10 @@
   "El nombre del anime en <a href='https://myanimelist.net/' target='_blank' class='hipervinculo'>MyAnimeList</a> siempre será correcto, pero en algunos casos también son válidos acotaciones del nombre y algunas traducciones.",
   "No se distingue entre minúsculas y mayúsculas.",
   "Los nombres pueden contener acentos y los símbolos apóstrofe, dos puntos, guión, exclamación cerrada, punto y coma y barra.",
-  "Los openings más difíciles tienen una pista, para verla solo hay que colocar el ratón encima de la interrogación blanca que hay a la derecha del número del opening, pero eso te convertirá automáticamente en un/a parguela.",
+  "Los openings del mismo anime tienen las mismas respuestas válidas; no es necesario especificar el número del opening.",
+  "En el caso de los remakes de animes antiguos, no es necesario especificar la fecha. Sin embargo, si el nombre del anime varía, las respuestas también varían.",
+  "Muchos openings tienen una pista, para verla solo hay que colocar el ratón encima de la interrogación blanca que hay a la derecha del número del opening, pero eso te convertirá automáticamente en un/a parguela.",
   "Si algún anime se resiste, habrá que mirar tops de openings en YouTube o descartar por animes conocidos.",
+  "Al escribir una respuesta, se te indicará tanto si fallas como si estás a punto de acertar.",
   "Hay que acertar todas, sin excepción."
 ]

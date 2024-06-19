@@ -21,3 +21,20 @@
   justify-content: space-between;
   width: 100%;
 }
+
+.orange {
+  color: orange;
+}
+
+::ng-deep .error-orange .mat-mdc-form-field-required-marker,
+::ng-deep .error-orange .mdc-text-field--outlined.mdc-text-field--invalid:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing {
+  color: orange !important;
+}
+
+.bottom-card {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}

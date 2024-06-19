@@ -1,34 +1,36 @@
 <h1 class="custom-title">⋆Anime⋆Openings⋆Quiz⋆</h1>
 
-<mat-expansion-panel class="rules-panel">
+<mat-expansion-panel class="rules-panel" [expanded]="open" (afterExpand)="open = true">
   <mat-expansion-panel-header>
     <mat-panel-title>
       Reglas
     </mat-panel-title>
   </mat-expansion-panel-header>
-  <mat-list role="list">
+  <ul>
     @for (rule of rules; track rule;) {
-      <mat-list-item role="listitem" [innerHTML]="rule"></mat-list-item>
+      <li [innerHTML]="rule"></li>
     }
-  </mat-list>
+  </ul>
 </mat-expansion-panel>
 
 <div class="success-container">
   <div class="left d-flex">
-    <button mat-flat-button (click)="openConfirmationModal()"
-    [disabled]="!successes"><mat-icon>delete</mat-icon>Borrar todas</button>
+    <button mat-flat-button (click)="openConfirmationModal()">
+      <mat-icon>delete</mat-icon>Borrar todas</button>
+    <button mat-flat-button (click)="doARas()"><mat-icon>lightbulb</mat-icon>Simulación de Ras</button>
     <mat-form-field>
       <mat-label>Ordenar</mat-label>
       <mat-select [formControl]="sortControl" (selectionChange)="sort()">
-          <mat-option [value]="'nsnc'">Sin contestar primero</mat-option>
-          <mat-option [value]="'fail'">Falladas primero</mat-option>
-          <mat-option [value]="'success'">Acertadas primero</mat-option>
+        <mat-option [value]="'nsnc'">Sin contestar primero</mat-option>
+        <mat-option [value]="'fail'">Falladas primero</mat-option>
+        <mat-option [value]="'success'">Acertadas primero</mat-option>
       </mat-select>
     </mat-form-field>
   </div>
   <div class="right relative d-flex">
     <span>Aciertos: </span>
-    <mat-chip class="chip-successes">{{successes}} / {{animes.length}}</mat-chip>
+    <mat-chip class="chip-successes" [class.fixed]="scrollPosition > 250">
+      {{successes}} / {{animes.length}}</mat-chip>
   </div>
 </div>
 
@@ -41,12 +43,25 @@
 </div>
 
 @if (complete) {
-  <div class="final-div">
+<div class="final-div">
+  <audio autoplay controls class="idol-audio">
+    <source src="{{'assets/audios/idol.mp3'}}" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+  <div class="d-flex">
+    <img [src]="'assets/imgs/angel.gif'" alt="GIF">
     <div>
-
       <h1 class="custom-title">⋆¡ENHORABUENA!⋆</h1>
       <h1 class="custom-title">⋆EL⋆NÚMERO⋆ES⋆</h1>
-      <h1 class="custom-title">⋆42⋆</h1>
+      <h1 class="custom-title">⋆56⋆</h1>
     </div>
+    <img [src]="'assets/imgs/nadine.gif'" alt="GIF">
   </div>
+</div>
 }
+
+<!-- Botón de scroll hacia arriba -->
+<button mat-fab class="scroll-to-top" [class.fade-in]="scrollPosition > 500" (click)="scrollToTop()"
+  matTooltip="Subir hasta arriba">
+  <mat-icon>arrow_upward</mat-icon>
+</button>

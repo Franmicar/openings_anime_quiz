@@ -23,32 +23,62 @@ export class AnimeQuizCardComponent implements OnInit {
   @Output() plus: EventEmitter<any> = new EventEmitter<any>();
 
   errors = [];
-  randomIndex: number = 0;
+  errorIndex = 0;
+  nearMisses = [];
+  nearMissIndex = 0;
   success = false;
+  coincidence = 0;
 
   constructor(private data: DataService) { }
 
   ngOnInit(): void {
-    console.log(this.anime)
-    this.data.getErrors().subscribe(errors => {
-      this.errors = errors;
-      this.getRandomIndex();
-    });
+    this.getData();
 
     this.success = this.anime.names.some((name: string) => this.anime.form?.value?.trim()?.toLowerCase() === name.toLowerCase());
+    this.calculateMatchPercentage(this.anime.form?.value);
 
     this.anime.form.valueChanges.pipe(
       debounceTime(500) // Espera 5 segundos después del último cambio
     ).subscribe((value: string) => {
       // Estas acciones ahora solo se ejecutarán después de un segundos de inactividad
+      this.calculateMatchPercentage(value);
       this.success = this.anime.names.some((name: string) => value.trim()?.toLowerCase() === name.toLowerCase());
       localStorage.setItem(this.anime.audio, value);
       this.plus.emit(); // Emitir el evento
     });
   }
 
-  getRandomIndex() {
-    this.randomIndex = Math.floor(Math.random() * this.errors.length);
+  getData() {
+    this.data.getErrors().subscribe(errors => {
+      this.errors = errors;
+      this.errorIndex = this.getRandomIndex(this.errors.length);
+    });
+
+    this.data.getNearMisses().subscribe(nearMisses => {
+      this.nearMisses = nearMisses;
+      this.nearMissIndex = this.getRandomIndex(this.nearMisses.length);
+    });
+  }
+
+  getRandomIndex(length = 0): number {
+    return Math.floor(Math.random() * length);
+  }
+
+  calculateMatchPercentage(str: string) {
+    let maxMatchPercentage = 0;
+
+    this.anime.names.forEach((name: string) => {
+      const inputStringTrimmed = str.trim().toLowerCase();
+      const stringTrimmed = name.trim().toLowerCase();
+
+      if (stringTrimmed.includes(inputStringTrimmed)) {
+        const matchPercentage = (inputStringTrimmed.length / stringTrimmed.length) * 100;
+        if (matchPercentage > maxMatchPercentage) {
+          maxMatchPercentage = matchPercentage;
+        }
+      }
+    });
+    this.coincidence = maxMatchPercentage;
   }
 
 }

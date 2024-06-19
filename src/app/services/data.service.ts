@@ -17,4 +17,8 @@ export class DataService {
   getErrors(): Observable<any> {
     return this.http.get('/assets/jsons/errores.json');
   }
+
+  getNearMisses(): Observable<any> {
+    return this.http.get('/assets/jsons/nearMisses.json');
+  }
 }
