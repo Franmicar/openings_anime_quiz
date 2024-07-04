@@ -586,6 +586,333 @@ export const animes: Anime[] = [
     names: ["Haikyuu!!", "Haikyu!! Los Ases del Vóley"], audio: "au_123", pista: "Fall 2015", n: 1,
     video: { ja: 'https://youtu.be/KycmCEfuey4?si=eE_BpdgVbGh-gqJ4', o: 'https://youtu.be/libAD49_XNw?si=NTzNseaoKS37onFa' }
   },
+  {
+    names: ["Digimon", "Digimon Adventure"], audio: "au_124", n: 1,
+    video: {
+      es: 'https://youtu.be/UXwunDD5Lm8?si=Yg8rWmD1xUqMofJ5', ja: 'https://youtu.be/aEmqwCkqkUk?si=nguGB9LAy42KUjVf',
+      f: 'https://youtu.be/PeSVLxLFjwA?si=BO94MIBjqPa39tpY'
+    }
+  },
+  {
+    names: ["Digimon 03", "Digimon Tamers"], audio: "au_125", n: 1,
+    video: {
+      es: 'https://youtu.be/Gu2YHoDHt4c?si=N89IN1se66CMcQNw', ja: 'https://youtu.be/Se-2l5A2wu4?si=zOszBjYcYzSXJRIz',
+      f: 'https://youtu.be/-ZWZIaxlRe4?si=woecp9t_SJK37kef'
+    }
+  },
+  {
+    names: ["Digimon Frontier"], audio: "au_126", n: 1,
+    video: {
+      es: 'https://youtu.be/L4IR6SkE_Aw?si=iFaNCqJXkI4fhkBR', ja: 'https://youtu.be/PLMJAdGEfs4?si=ToR4YjaieqjvTYj-',
+      f: 'https://youtu.be/jITCxxobtdw?si=RiJa0LoN04VhUY5e'
+    }
+  },
+  {
+    names: ["Doremi", "Ojamajo Doremi", "Magical DoReMi"], audio: "au_127", n: 1,
+    video: {
+      es: 'https://youtu.be/YIpZuc_Pwnw?si=F5yw8-8mSiTDcBXH', ja: 'https://youtu.be/9CioAYtz4iM?si=iNFHjQVCFqORzHp7',
+      f: 'https://youtu.be/yXD0AWOd9kM?si=Izs6rKuM1cc-Lxrp'
+    }
+  },
+  {
+    names: ["Love Hina"], audio: "au_128", n: 1,
+    video: {
+      es: 'https://youtu.be/9DibpuVcdG0?si=rnYhgFl8UylEyLn9', ja: 'https://youtu.be/8eXZ97tRIK0?si=DWbHnnclJkoOIk76',
+      o: 'https://youtu.be/MVTJKUwI76I?si=hDUGhG8ZGo6895Z_'
+    }
+  },
+  {
+    names: ["Mazinger Z"], audio: "au_129", n: 1,
+    video: {
+      es: 'https://youtu.be/joEetudPr9s?si=S-7xrapeXk4oHfTX', ja: 'https://youtu.be/MR7xA2JbNCQ?si=e0GTm-lVJS9pGsmP',
+      f: 'https://youtu.be/XnAITNbQ-hk?si=XAutEEppfxRoEm_e'
+    }
+  },
+  {
+    names: ["Bobobo", "Bobobo-bo Bo-bobo"], audio: "au_130", n: 2,
+    video: { ja: 'https://youtu.be/phR_SkRSJtE?si=53TrgfpeRZQIADsm', o: 'https://youtu.be/n9QTaxnm-P0?si=dq21fuWmkc_M-Sj6' }
+  },
+  {
+    names: ["YAT", "YAT Anshin! Uchuu Ryokou"], audio: "au_131", pista: 'Fall 1996', n: 1,
+    video: { ja: 'https://youtu.be/l-jtQUnA1FM?si=TcgxxoeKoEH4BWkJ', f: 'https://youtu.be/uJlheX6nYWw?si=853muELWd_im6NTV' }
+  },
+  {
+    names: ["Boku no Hero Academia", "My Hero Academia"], audio: "au_132", n: 2,
+    video: { ja: 'https://youtu.be/7TzaEHUWvpM?si=HmD4o-p9k6qwijYt', f: '' }
+  },
+  {
+    names: ["Bleach"], audio: "au_133", n: 1,
+    video: { ja: 'https://youtu.be/wW9TwZdWpjw?si=-oLa2reDKFwVz_EV', f: '' }
+  },
+  {
+    names: ["One Piece"], audio: "au_134", n: 1,
+    video: { es: 'https://youtu.be/dSUQXSXgvVw?si=UaS3_c0LJAC7cfin', ja: '', f: '' }
+  },
+  {
+    names: ["Spy X Family"], audio: "au_135", n: 1,
+    video: { ja: 'https://youtu.be/EzGs8Tm_C2g?si=wfAT4i6XVVa-NkH5', f: '' }
+  },
+  {
+    names: ["One Piece"], audio: "au_136", n: 2,
+    video: { es: 'https://youtu.be/-8Uw71LszDA?si=19_2zzCP73ilA_o-', ja: '', f: '' }
+  },
+  {
+    names: ["Noragami"], audio: "au_137", n: 1,
+    video: { ja: 'https://youtu.be/gWCnKoEgfP0?si=6iMvSk33GvwhqdUU', f: '' }
+  },
+  {
+    names: ["Jujutsu Kaisen"], audio: "au_138", n: 3,
+    video: { ja: 'https://youtu.be/gcgKUcJKxIs?si=HvBIOg1FWENKqK6O', f: '' }
+  },
+  {
+    names: ["One Piece"], audio: "au_139", n: 20,
+    video: { ja: 'https://youtu.be/Oo52vQyAR6w?si=jCxAHSU3ej3-AiNX', f: '' }
+  },
+  {
+    names: ["Kimetsu no Yaiba", "Demon Slayer"], audio: "au_140", n: 1,
+    video: { ja: 'https://youtu.be/pmanD_s7G3U?si=H9JUW4Dk0BGRRfk-', f: '' }
+  },
+  {
+    names: ["Wotaku ni Koi wa Muzukashii", "Wotakoi: Love is Hard for Otaku", "wotakoi"], audio: "au_141", n: 1, pista: 'Spring 2018',
+    video: { ja: 'https://youtu.be/XjHqfhOcK_0?si=O2e6phJRLz2o-2nU', f: '' }
+  },
+  {
+    names: ["Fullmetal Alchemist: Brotherhood"], audio: "au_142", n: 2,
+    video: { ja: 'https://youtu.be/aZcHqqqeNUs?si=LpgUy1ra5zLXUSP_', f: '' }
+  },
+  {
+    names: ["Tokyo Revengers"], audio: "au_143", n: 1,
+    video: { ja: 'https://youtu.be/By_JYrhx-WY?si=O-TciITkqRW0WyDF', f: '' }
+  },
+  {
+    names: ["One Piece"], audio: "au_144", n: 4,
+    video: { es: '', ja: 'https://youtu.be/TxzDvP-quXs?si=loZgdf6Zv8ptwEcm', f: '' }
+  },
+  {
+    names: ["One Piece"], audio: "au_145", n: 3,
+    video: { es: '', ja: 'https://youtu.be/x1_sHTEEmik?si=NzHE077IeVzqU8Kn', f: '' }
+  },
+  {
+    names: ["Spy X Family"], audio: "au_146", n: 2,
+    video: { ja: 'https://youtu.be/YOIJOJsUkUg?si=UuXDJpxfJKVq1TaC', f: '' }
+  },
+  {
+    names: ["Urusei Yatsura 2022", "Urusei Yatsura", "Lum, la chica invasora"], audio: "au_147", n: 3,
+    video: { ja: 'https://youtu.be/F9EswQEBqmM?si=FPOUqtcZ0HGbGMzA', f: '' }
+  },
+  {
+    names: ["Bleach"], audio: "au_148", n: 2,
+    video: { ja: 'https://youtu.be/h1MoLQ9Wcv0?si=Xifu0YZaZhzb9I-x', f: '' }
+  },
+  {
+    names: ["Boku no Hero Academia", "My Hero Academia"], audio: "au_149", n: 3,
+    video: { ja: 'https://youtu.be/-owtG3xsQAg?si=g7nSa--pDGZj-eGE', f: '' }
+  },
+  {
+    names: ["One Piece"], audio: "au_150", n: 16,
+    video: { ja: 'https://youtu.be/WsPI841IKw4?si=IlPrm0Pj32bx3nfj', f: '' }
+  },
+  {
+    names: ["Itai no wa Iya nanode Bougyoryoku ni Kyokufuri Shitai to Omoimasu.",
+      "BOFURI: I Don't Want to Get Hurt, so I'll Max Out My Defense.", "BOFURI"], audio: "au_151", n: 1, pista: 'Winter 2020',
+    video: { ja: 'https://youtu.be/MVTMQbd4shI?si=vMhCqTIZvSO-H8iK', f: '' }
+  },
+  {
+    names: ["Shimoneta to Iu Gainen ga Sonzai Shinai Taikutsu na Sekai", "Shimoneta",
+      "SHIMONETA: A Boring World Where the Concept of Dirty Jokes Doesn't Exist"], audio: "au_152", n: 1, pista: 'Summer 2015',
+    video: { ja: 'https://youtu.be/a1V8M2LwGq0?si=KPXGpnzb8UH08h69', f: '' }
+  },
+  {
+    names: ["Marmalade Boy"], audio: "au_153", n: 1, pista: 'Spring 1994',
+    video: { ja: 'https://youtu.be/Osv73GPCpRo?si=DBSsvDzTnAtTq9_P', f: '' }
+  },
+  {
+    names: ["One Piece"], audio: "au_154", n: 6,
+    video: { ja: 'https://youtu.be/B4ZQvniSX4M?si=CxWyz_mDHCrd3vG_', f: '' }
+  },
+  {
+    names: ["Kimetsu no Yaiba", "Demon Slayer"], audio: "au_155", n: 3,
+    video: { ja: 'https://youtu.be/st4wcpjZeQQ?si=iN88vO7P3HoUhCU2', f: '' }
+  },
+  {
+    names: ["Basilisk: Kouga Ninpou Chou", "Basilisk"], audio: "au_156", n: 1, pista: 'Spring 2005',
+    video: { ja: 'https://youtu.be/b7Jt8wX_fu4?si=RyZLhqvs7MAcfucd', f: '' }
+  },
+  {
+    names: ["TSUGUMOMO"], audio: "au_157", n: 1, pista: 'Spring 2017',
+    video: { ja: 'https://youtu.be/IoMrm-lvAEQ?si=Y03yTZlfmuM7jqYo', f: '' }
+  },
+  {
+    names: ["Urusei Yatsura 2022", "Urusei Yatsura", "Lum, la chica invasora"], audio: "au_158", n: 4,
+    video: { ja: 'https://youtu.be/VihAYldjRa0?si=0XJWDuLs3LyDMIeV', f: '' }
+  },
+  {
+    names: ["Watashi ga Motenai no wa Dou Kangaetemo Omaera ga Warui!",
+      "WataMote: No Matter How I Look At It, It's You Guys' Fault I'm Not Popular!",
+      "watamote"], audio: "au_159", n: 1, pista: 'Summer 2013',
+    video: { ja: 'https://youtu.be/rQjVvYj15zk?si=Nhzk_FnNCtR8-AxA', f: '' }
+  },
+  {
+    names: ["Fruit Basket 2019", "Fruit Basket"], audio: "au_160", n: 2, pista: 'Summer 2019',
+    video: { ja: 'https://youtu.be/3RJqEL2uHiE?si=p8dPJYaXQ6HvTWFy', f: '' }
+  },
+  {
+    names: ["One Piece"], audio: "au_161", n: 5,
+    video: { es: '', ja: 'https://youtu.be/RO_VGv4GT9k?si=m2RbmmQjEjvJSJEn', f: '' }
+  },
+  {
+    names: ["Shin Chan", "Crayon Shin-chan"], audio: "au_162", n: 1,
+    video: { es: 'https://youtu.be/a0XV5Gcdqxs?si=ijbT_VtXSyiuv7U8', ja: '', f: '' }
+  },
+  {
+    names: ["Shingeki no Kyojin", "Attack on Titan"], audio: "au_163", n: 3,
+    video: { ja: 'https://youtu.be/ILZh2xncU8A?si=FvkTcrVSqd5e2fSc', f: '' }
+  },
+  {
+    names: ["Urusei Yatsura", "Lum, la chica invasora"], audio: "au_164", n: 1,
+    video: { ja: 'https://youtu.be/2hulET9tn9M?si=j3_wJ_4GFhNpFU2K', f: '' }
+  },
+  {
+    names: ["Nisekoi"], audio: "au_165", n: 1, pista: 'Winter 2014',
+    video: { ja: 'https://youtu.be/G5YmZRs_L9k?si=lzst3iABNyKBkEI-', f: '' }
+  },
+  {
+    names: ["One Piece"], audio: "au_166", n: 13,
+    video: { ja: 'https://youtu.be/9vc2r0s6M_M?si=RahQxmFW1MYB_loq', f: '' }
+  },
+  {
+    names: ["Fullmetal Alchemist: Brotherhood"], audio: "au_167", n: 4,
+    video: { ja: 'https://youtu.be/dnIlB6JhLyI?si=FBNe5lsdYib5LYzJ', f: '' }
+  },
+  {
+    names: ["Angel Beats!"], audio: "au_168", n: 1, pista: 'Spring 2010',
+    video: { ja: 'https://youtu.be/Eksw56g-WBY?si=nvqj_ARGvRHq_-9W', f: '' }
+  },
+  {
+    names: ["One Piece"], audio: "au_169", n: 14,
+    video: { ja: 'https://youtu.be/dD9f09g5cxU?si=fD66hJCt23LIWj9B', f: '' }
+  },
+  {
+    names: ["Magi", "Magi: The Labyrinth of Magic"], audio: "au_170", n: 1, pista: 'Fall 2012',
+    video: { ja: 'https://youtu.be/pwO2AVjTH9k?si=00p_CzWCK5mDqam-', f: '' }
+  },
+  {
+    names: ["Fruit Basket"], audio: "au_171", n: 5, pista: 'Spring 2021',
+    video: { ja: 'https://youtu.be/vVK7vO5hN34?si=UvUsHXWsc4Ct2Nto', f: '' }
+  },
+  {
+    names: ["Koutetsujou no Kabaneri", "Kabaneri of the Iron Fortress"], audio: "au_172", n: 1, pista: 'Spring 2016',
+    video: { ja: 'https://youtu.be/UqhZrl1KFpc?si=X8hrmHHKZSdgT_V3', f: '' }
+  },
+  {
+    names: ["Shingeki no Kyojin", "Attack on Titan"], audio: "au_173", n: 6,
+    video: { ja: 'https://youtu.be/Y-eoYLBbZOA?si=LOlPsMliJOlcwI8k', f: '' }
+  },
+  {
+    names: ["One Piece"], audio: "au_174", n: 23,
+    video: { ja: 'https://youtu.be/YycdCG0L8Kg?si=uF1hOWzIH6mm9Hym', f: '' }
+  },
+  {
+    names: ["Boku no Hero Academia", "My Hero Academia"], audio: "au_175", n: 6,
+    video: { ja: 'https://youtu.be/kYfNvEcMgOg?si=95RUZJC_15WTaztP', f: '' }
+  },
+  {
+    names: ["Urusei Yatsura", "Lum, la chica invasora"], audio: "au_176", n: 2,
+    video: { ja: 'https://youtu.be/KOyFSBAsf5s?si=LqYTxC8GlIXt7qOo', f: '' }
+  },
+  {
+    names: ["Urusei Yatsura 2022", "Urusei Yatsura", "Lum, la chica invasora"], audio: "au_177", n: 1,
+    video: { ja: 'https://youtu.be/OgsWK7pwx7k?si=VzKEKiOcuT7F5V60', f: '' }
+  },
+  {
+    names: ["Shingeki no Kyojin", "Attack on Titan"], audio: "au_178", n: 7,
+    video: { ja: 'https://youtu.be/2S4qGKmzBJE?si=HYA8RDckSCc3wqHL', f: '' }
+  },
+  {
+    names: ["Danganronpa", "Danganronpa: Kibou no Gakuen to Zetsubou no Koukousei The Animation",
+      "Danganronpa: The Animation"], audio: "au_179", n: 1, pista: 'Summer 2013',
+    video: { ja: 'https://youtu.be/zKwRkTaIsZo?si=Q2vpekh0Qcbp1eyG', f: '' }
+  },
+  {
+    names: ["Rurouni Kenshin", "Rurouni Kenshin: Meiji Kenkaku Romantan"], audio: "au_180", n: 1, pista: 'Winter 1996',
+    video: { ja: 'https://youtu.be/B6unFPDCVlc?si=WVSEVd_JCLwn-u57', f: '' }
+  },
+  {
+    names: ["JoJo no Kimyou na Bouken", "JoJo's Bizarre Adventure: Stardust Crusaders",
+      "JoJo"], audio: "au_181", n: 3, pista: 'Spring 2014',
+    video: { ja: 'https://youtu.be/L9DK-DRg85w?si=ndt2LCsrRuJC97zB', f: '' }
+  },
+  {
+    names: ["Cosas de Locos", "Tensai Bakabon"], audio: "au_182", n: 1,
+    video: { es: 'https://youtu.be/iULqfBhBIsQ?si=wAPE7QQrfeEeWLmq', ja: '', f: '' }
+  },
+  {
+    names: ["Kochikame", 'Kochira Katsushikaku Kameari Kouenmae Hashutsujo'], audio: "au_183", n: 1,
+    video: { es: 'https://youtu.be/XJDboajV27g?si=Yn208Slqoyr4849Z', ja: '', f: '' }
+  },
+  {
+    names: ["Sentouin, Hakenshimasu!", "Combatants Will Be Dispatched!"], audio: "au_184", n: 1, pista: 'Spring 2021',
+    video: { ja: 'https://youtu.be/1Dmn0RyhZGE?si=vZi9s6Cr6-PpO2qO', o: 'https://youtu.be/K-CodXtslc0?si=Jo_p1TBgottnMjU4' }
+  },
+  {
+    names: ["Mato Seihei no Slave", "Chained Soldier"], audio: "au_185", n: 1, pista: 'Winter 2024',
+    video: { ja: 'https://youtu.be/cxLspslAg1Q?si=PqvoL5CxIWD1oEa9', f: '' }
+  },
+  {
+    names: ["Ajin", "Ajin: Demi-Human"], audio: "au_186", n: 1, pista: 'Winter 2016',
+    video: { ja: 'https://youtu.be/XtMMIkpDXNY?si=-O7nHBhsf-etQVwe', f: '' }
+  },
+  {
+    names: ["JoJo no Kimyou na Bouken", "JoJo's Bizarre Adventure", "JoJo"], audio: "au_187", n: 2, pista: 'Winter 2013',
+    video: { ja: 'https://youtu.be/SJkCLcnGB-c?si=8OLHQ3NUBBBwHMxF', f: '' }
+  },
+  {
+    names: ["Tomo-chan wa Onnanoko!", "Tomo-chan Is a Girl!", "Tomo-chan"], audio: "au_188", n: 1, pista: 'Winter 2023',
+    video: { ja: 'https://youtu.be/JypMi-Dt_S8?si=dhiDBQEy3U6x_lOc', f: '' }
+  },
+  {
+    names: ["Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo",
+      "The 100 Girlfriends Who Really, Really, Really, Really, Really Love You"], audio: "au_189", n: 1, pista: 'Fall 2023',
+    video: { ja: 'https://youtu.be/ZmA3O50cMTY?si=V0dZbaSl5Ad-kGOl', f: '' }
+  },
+  {
+    names: ["JoJo no Kimyou na Bouken", "JoJo's Bizarre Adventure", "JoJo"], audio: "au_190", n: 5, pista: 'Spring 2016',
+    video: { ja: 'https://youtu.be/AQ3oyp4D6FY?si=1guS3ulMAXSso5Ma', f: '' }
+  },
+  {
+    names: ["Yofukashi no Uta", "Call of the Night"], audio: "au_191", n: 1, pista: 'Summer 2022',
+    video: { ja: 'https://youtu.be/rckYQnPW-wk?si=Nnka0I0y2d38h0rn', f: '' }
+  },
+  {
+    names: ["Pokemon"], audio: "au_192", n: 3,
+    video: { es: 'https://youtu.be/z0OUwsWjqds?si=K740gB0LnEg-Or78', ja: '', f: '' }
+  },
+  {
+    names: ["JoJo no Kimyou na Bouken", "JoJo's Bizarre Adventure", "JoJo"], audio: "au_193", n: 8, pista: 'Fall 2018',
+    video: { ja: 'https://youtu.be/i1N2cclJVys?si=zkdKb2oG-Qml33F7', f: '' }
+  },
+  {
+    names: ["Nintama Rantarou", "Ninja Boy Rantaro"], audio: "au_194", n: 1,
+    video: { es: 'https://youtu.be/ei9skqHkSKQ?si=rnl9e1q1HE1hgMQ_', ja: '', f: '' }
+  },
+  {
+    names: ["Samurai Champloo"], audio: "au_195", n: 1, pista: 'Spring 2004',
+    video: { en: 'https://youtu.be/Eq6EYcpWB_c?si=KGVotxanUYfrV19E', f: '' }
+  },
+  {
+    names: ["JoJo no Kimyou na Bouken", "JoJo's Bizarre Adventure", "JoJo"], audio: "au_196", n: 1, pista: 'Fall 2012',
+    video: { ja: 'https://youtu.be/wPdX66-Ag2s?si=U1lKqUbdyP8xYJ53', f: '' }
+  },
+  {
+    names: ["JoJo no Kimyou na Bouken", "JoJo's Bizarre Adventure", "JoJo"], audio: "au_197", n: 10, pista: 'December 2021',
+    video: { ja: 'https://youtu.be/Uki8nRI9eFg?si=G_ORSG7-76M6w5AN', f: '' }
+  },
+  {
+    names: ["City Hunter", "City Hunter 3"], audio: "au_198", n: 1, pista: 'Fall 1989',
+    video: { ja: 'https://youtu.be/07uUSEPeP4A?si=uvphhewfO6AymEDY', f: 'https://youtu.be/FkiDM_xx-oA?si=wGVXYdFMQTlnhN8I' }
+  },
+  {
+    names: ["Dumbbell Nan Kilo Moteru?", "How Heavy Are the Dumbbells You Lift?"], audio: "au_199", n: 1, pista: 'Summer 2019',
+    video: { ja: 'https://youtu.be/ULjbIMvP6A0?si=A1bqH6gE8lkgJ1jD', f: 'https://youtu.be/sNhXgwVsW60?si=wxRxoAF0y_o1wncT' }
+  }
 ];
-
-
