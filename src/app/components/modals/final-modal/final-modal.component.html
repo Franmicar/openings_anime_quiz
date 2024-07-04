@@ -1,20 +1,15 @@
 <h2 mat-dialog-title>¡Enhorabuena!</h2>
 <mat-dialog-content>
   <div>
-    ¡¡ESPERA!! ¡¡Antes de acabar tienes que resolver estos tres openings que no pudieron entrar en los 120!!!!
-  </div>
-  <div>
-    PD: Nos acordamos después de ellos y tienen que estar aquí si o si.
-  </div>
-  <div class="app-container">
-    <!-- Otros elementos de tu AppComponent -->
-    @for (anime of extraAnimes; track anime) {
-    <app-anime-quiz-card [anime]="anime" [index]="$index" (plus)="check()"></app-anime-quiz-card>
-    }
-    <!-- Más contenido de tu AppComponent -->
+    ¡Has completado todo el quiz! Si que sabes de openings de anime.
   </div>
 </mat-dialog-content>
-<mat-dialog-actions>
-  <button mat-button mat-dialog-close>Cancelar</button>
-  <button mat-flat-button (click)="close(true)" [disabled]="!finished">Terminar</button>
+<mat-dialog-actions class="dialog-actions">
+  <button mat-flat-button class="full-width" (click)="close(true)">
+    ¡Dame el número!
+  </button>
+  <button mat-raised-button class="full-width high-button" mat-dialog-close>
+    Gracias, pero no necesito el número. La amistad no se puede medir por una caja llena de sobres con dinero. Prefiero quedarme con la experiencia de este maravilloso regalo.
+  </button>
 </mat-dialog-actions>
+

@@ -1,8 +1,15 @@
-.app-container {
-  padding: 40px;
+.full-width {
+  width: 100%;
+  text-align: center; /* Alinea el texto al centro si es necesario */
+  white-space: normal; /* Asegura que el texto no se trunque y se ajuste según el ancho disponible */
+  margin: 8px 0; /* Ajusta los márgenes superior e inferior */
+}
+
+.dialog-actions {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 25px;
+  justify-content: space-around; /* Espacio alrededor de los botones */
+}
+
+.high-button {
+  padding: 50px;
 }

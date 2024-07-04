@@ -1,0 +1,15 @@
+<div class="video-title">
+  <h4 mat-dialog-title>{{ data.name }}</h4>
+  <button mat-icon-button mat-dialog-close>
+    <mat-icon>close</mat-icon>
+  </button>
+</div>
+<mat-dialog-content style="padding-top: 0;">
+  <mat-stepper>
+    @for (key of videoKeys; track key) {
+      <mat-step [label]="keyNames[key]" [completed]="false">
+        <iframe [src]="getVideoUrl(data.video[key])" frameborder="0" allowfullscreen></iframe>
+      </mat-step>
+    }
+  </mat-stepper>
+</mat-dialog-content>

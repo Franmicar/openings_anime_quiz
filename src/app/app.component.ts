@@ -15,13 +15,14 @@ import { MatSelectModule } from '@angular/material/select';
 import { FinalModalComponent } from './components/modals/final-modal/final-modal.component';
 import { CommonModule } from '@angular/common';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { CookiesComponent } from './components/cookies/cookies.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, AnimeQuizCardComponent, MatExpansionModule, MatTooltipModule,
     MatListModule, MatChipsModule, MatButtonModule, MatIconModule, MatDialogModule,
-    MatSelectModule, FormsModule, ReactiveFormsModule, CommonModule],
+    MatSelectModule, FormsModule, ReactiveFormsModule, CommonModule, CookiesComponent],
   providers: [DataService],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
@@ -80,13 +81,7 @@ export class AppComponent implements OnInit {
       this.plusSuccesses();
     }
     if (this.successes === this.animes.length) {
-      this.dialog.open(FinalModalComponent, {
-        width: '80vw'
-      }).afterClosed().subscribe(res => {
-        if (res) {
-          this.complete = res;
-        }
-      });
+      this.openFinalModal();
     }
     return respuesta;
   }
@@ -153,6 +148,21 @@ export class AppComponent implements OnInit {
 
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  openFinalModal() {
+    this.dialog.open(FinalModalComponent, {
+      width: '80vw'
+    }).afterClosed().subscribe(res => {
+      if (res) {
+        this.complete = res;
+      }
+    });
+  }
+
+  goPlaylist() {
+    const url = 'https://www.youtube.com/watch?v=uaRnwnmqrws&list=PLFHO7FN9V3MODpAPO_IP49H3w8X5noxlY&ab_channel=KADOKAWAanime';
+    window.open(url, '_blank');
   }
 
 }

@@ -29,14 +29,18 @@
   </mat-form-field>
   <div class="bottom-card">
     @if (success) {
-    @if (anime.audio === 'au_31') {
-    <div class="success">Correcteiro! ✔️</div>
-    } @else {
-    <div class="success">Correcto! ✔️</div>
-    }
+      @if (anime.audio === 'au_31') {
+      <div class="success">Correcteiro! ✔️</div>
+      } @else {
+      <div class="success">Correcto! ✔️</div>
+      }
     } @else {
     <div>❓❓❓</div>
     }
-    <button mat-flat-button (click)="anime?.form?.markAsTouched()">Comprobar</button>
+    @if (success) {
+      <button mat-flat-button (click)="openVideo()" [disabled]="!anime?.video"><mat-icon>visibility</mat-icon>Ver</button>
+    } @else {
+      <button mat-flat-button (click)="anime?.form?.markAsTouched()"><mat-icon>check_circle</mat-icon>Comprobar</button>
+    }
   </div>
 </mat-card>

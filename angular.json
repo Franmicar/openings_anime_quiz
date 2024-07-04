@@ -34,10 +34,13 @@
               }
             ],
             "styles": [
+              "node_modules/cookieconsent/build/cookieconsent.min.css",
               "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/cookieconsent/build/cookieconsent.min.js"
+            ]
           },
           "configurations": {
             "production": {

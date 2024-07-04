@@ -15,33 +15,7 @@ import { checkAnimeNameValidator } from '../../../app.component';
 })
 export class FinalModalComponent {
 
-  extraAnimes: Anime[] = [
-    { names: ["Heppoko Jikken Animation Excel♥Saga", "Excel Saga"], audio: "au_120" },
-    { names: ["Bakuten Shoot Beyblade", "Beyblade"], audio: "au_121" },
-    { names: ["Detective Conan", "Meitantei Conan", "Case Closed"], audio: "au_122" }
-  ];
-  finished = false;
-
   constructor(public dialogRef: MatDialogRef<FinalModalComponent>) {}
-
-  ngOnInit(): void {
-    this.createForm();
-  }
-
-  createForm() {
-    // Verifica si hay respuestas guardadas en localStorage
-    this.extraAnimes = this.extraAnimes.map((anime, index) => {
-      // Usa la respuesta guardada si está disponible, de lo contrario usa una cadena vacía
-      return {
-        ...anime,
-        form: new FormControl('', [Validators.required, checkAnimeNameValidator(anime.names)])
-      };
-    });
-  }
-
-  check() {
-    this.finished = this.extraAnimes.every(anime => anime.form?.valid);
-  }
 
   close(res = false) {
     this.dialogRef.close(res);

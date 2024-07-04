@@ -8,11 +8,14 @@ import { MatInputModule } from '@angular/material/input';
 import { DataService } from '../../services/data.service';
 import { debounceTime } from 'rxjs';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { VideomodalComponent } from '../modals/videomodal/videomodal.component';
 
 @Component({
   selector: 'app-anime-quiz-card',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule, MatCardModule, MatButtonModule, MatIconModule, MatFormFieldModule, MatInputModule, MatTooltipModule],
+  imports: [FormsModule, ReactiveFormsModule, MatCardModule, MatDialogModule,
+    MatButtonModule, MatIconModule, MatFormFieldModule, MatInputModule, MatTooltipModule],
   templateUrl: './anime-quiz-card.component.html',
   styleUrl: './anime-quiz-card.component.scss'
 })
@@ -29,7 +32,10 @@ export class AnimeQuizCardComponent implements OnInit {
   success = false;
   coincidence = 0;
 
-  constructor(private data: DataService) { }
+  constructor(
+    private data: DataService,
+    private dialog: MatDialog
+  ) { }
 
   ngOnInit(): void {
     this.getData();
@@ -79,6 +85,15 @@ export class AnimeQuizCardComponent implements OnInit {
       }
     });
     this.coincidence = maxMatchPercentage;
+  }
+
+  openVideo() {
+    this.dialog.open(VideomodalComponent,
+      {data: {video: this.anime.video, name: this.anime.names[0]},
+      maxWidth: 'none',
+      width: '70vw',
+      height: 'auto',
+    });
   }
 
 }

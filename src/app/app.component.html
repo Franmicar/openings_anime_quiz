@@ -26,6 +26,9 @@
         <mat-option [value]="'success'">Acertadas primero</mat-option>
       </mat-select>
     </mat-form-field>
+    @if (successes === animes.length) {
+      <button mat-flat-button (click)="openFinalModal()">¡Dame el número!</button>
+    }
   </div>
   <div class="right relative d-flex">
     <span>Aciertos: </span>
@@ -54,6 +57,9 @@
       <h1 class="custom-title">⋆¡ENHORABUENA!⋆</h1>
       <h1 class="custom-title">⋆EL⋆NÚMERO⋆ES⋆</h1>
       <h1 class="custom-title">⋆56⋆</h1>
+      <div class="text-center">
+        <button mat-flat-button (click)="goPlaylist()"><mat-icon>queue_music</mat-icon>Playlist</button>
+      </div>
     </div>
     <img [src]="'assets/imgs/nadine.gif'" alt="GIF">
   </div>
@@ -61,7 +67,9 @@
 }
 
 <!-- Botón de scroll hacia arriba -->
-<button mat-fab class="scroll-to-top" [class.fade-in]="scrollPosition > 500" (click)="scrollToTop()"
+<button mat-fab class="scroll-to-top" [class.fade-in]="scrollPosition > 500 || !complete" (click)="scrollToTop()"
   matTooltip="Subir hasta arriba">
   <mat-icon>arrow_upward</mat-icon>
 </button>
+
+<app-cookies></app-cookies>
