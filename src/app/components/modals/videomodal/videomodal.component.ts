@@ -1,4 +1,5 @@
 import { O } from '@angular/cdk/keycodes';
+import { BreakpointObserver } from '@angular/cdk/layout';
 import { Component, Inject } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MAT_DIALOG_DATA, MatDialogModule } from '@angular/material/dialog';
@@ -16,6 +17,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 export class VideomodalComponent {
 
   videoKeys: string[];
+  isScreenSmall: boolean = false;
   keyNames: any = {
     ja: 'Japonés',
     es: 'Español',
@@ -31,9 +33,16 @@ export class VideomodalComponent {
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: any,
-    private sanitizer: DomSanitizer
+    private sanitizer: DomSanitizer,
+    private breakpointObserver: BreakpointObserver
   ) {
     this.videoKeys = Object.keys(data.video);
+  }
+
+  ngOnInit(): void {
+    this.breakpointObserver.observe(['(max-width: 768px)']).subscribe(result => {
+      this.isScreenSmall = result.matches;
+    });
   }
 
   getVideoUrl(url: string): SafeResourceUrl {

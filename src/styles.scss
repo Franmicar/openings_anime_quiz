@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+$breakpoint-small: 576px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 992px;
+$breakpoint-xlarge: 1200px;
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
@@ -33,6 +37,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
   display: flex;
   align-items: center;
   gap: 15px;
+  flex-wrap: wrap;
+}
+
+.d-grid-mobile {
+  @media (max-width: $breakpoint-small) {
+    display: grid;
+  }
 }
 
 .d-none {
@@ -41,4 +52,32 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
 
 .text-center {
   text-align: center;
+}
+
+.video-modal {
+  // Estilos generales del modal
+  max-width: none;
+  width: 70vw;
+  height: auto;
+
+  @media (max-width: $breakpoint-small) {
+    width: 100vw; // Ancho completo de la ventana
+    height: 100vh; // Altura completa de la ventana
+    top: 0;
+    left: 0;
+    margin: 0; // Sin margen
+    padding: 0; // Sin relleno (opcional, dependiendo del diseño)
+    position: fixed; // Fijo en la pantalla
+    overflow: auto; // Habilitar scroll si el contenido es mayor que la pantalla
+    z-index: 9999; // Asegurarse de que esté por encima de otros elementos
+    .mat-mdc-dialog-content {
+      max-height: max-content;
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .cdk-overlay-pane.mat-mdc-dialog-panel {
+      max-width: none !important;
+  }
 }

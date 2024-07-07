@@ -90,9 +90,7 @@ export class AnimeQuizCardComponent implements OnInit {
   openVideo() {
     this.dialog.open(VideomodalComponent,
       {data: {video: this.anime.video, name: this.anime.names[0]},
-      maxWidth: 'none',
-      width: '70vw',
-      height: 'auto',
+      panelClass: ['video-modal']
     });
   }
 

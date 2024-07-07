@@ -1,3 +1,8 @@
+$breakpoint-small: 576px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 992px;
+$breakpoint-xlarge: 1200px;
+
 .app-container {
   padding: 40px;
   display: flex;
@@ -42,11 +47,32 @@ ul li:before {
   display: flex;
   justify-content: space-between;
   padding: 0 40px;
+
+    // Estilos para pantallas pequeñas y superiores
+    @media (max-width: $breakpoint-small) {
+      display: grid;
+      justify-content: normal;
+    }
 }
 
-.chip-successes {
-  background-color: #b6d4ff !important;
+.success-counter {
+  display: flex;
+  gap: 15px;
+  position: relative;
+  align-items: center;
+
+  .success-text {
+    color: #fff; // Color del texto blanco
+    background-color: rgba(0, 0, 0, 0.5); // Fondo semi-transparente para mayor legibilidad
+    padding: 0.5em; // Espaciado alrededor del texto
+    border-radius: 0.25em; // Bordes redondeados
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); // Sombra de texto para mayor contraste
+  }
+  .chip-successes {
+    background-color: #b6d4ff !important;
+  }
 }
+
 
 .custom-title {
   font-family: 'Arial', sans-serif;
@@ -60,6 +86,7 @@ ul li:before {
     0 0 10px rgba(0, 0, 0, 0.5), /* Sombra adicional */
     0 0 20px rgba(0, 0, 0, 0.3); /* Sombra adicional */
   -webkit-text-stroke: 1px black; /* Borde negro alrededor del texto */
+  overflow-wrap: break-word;
 }
 
 .final-div {
@@ -110,4 +137,3 @@ ul li:before {
   right: 25px;
   top: 25px;
 }
-

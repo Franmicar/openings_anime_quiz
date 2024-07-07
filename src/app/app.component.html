@@ -14,10 +14,13 @@
 </mat-expansion-panel>
 
 <div class="success-container">
-  <div class="left d-flex">
+  <div class="d-flex d-grid-mobile">
     <button mat-flat-button (click)="openConfirmationModal()">
       <mat-icon>delete</mat-icon>Borrar todas</button>
     <button mat-flat-button (click)="doARas()"><mat-icon>lightbulb</mat-icon>Simulación de Ras</button>
+    @if (successes === animes.length) {
+      <button mat-flat-button (click)="openFinalModal()">¡Dame el número!</button>
+    }
     <mat-form-field>
       <mat-label>Ordenar</mat-label>
       <mat-select [formControl]="sortControl" (selectionChange)="sort()">
@@ -26,12 +29,9 @@
         <mat-option [value]="'success'">Acertadas primero</mat-option>
       </mat-select>
     </mat-form-field>
-    @if (successes === animes.length) {
-      <button mat-flat-button (click)="openFinalModal()">¡Dame el número!</button>
-    }
   </div>
-  <div class="right relative d-flex">
-    <span>Aciertos: </span>
+  <div class="success-counter">
+    <span class="success-text">Aciertos: </span>
     <mat-chip class="chip-successes" [class.fixed]="scrollPosition > 250">
       {{successes}} / {{animes.length}}</mat-chip>
   </div>

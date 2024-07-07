@@ -5,11 +5,22 @@
   </button>
 </div>
 <mat-dialog-content style="padding-top: 0;">
-  <mat-stepper>
-    @for (key of videoKeys; track key) {
-      <mat-step [label]="keyNames[key]" [completed]="false">
-        <iframe [src]="getVideoUrl(data.video[key])" frameborder="0" allowfullscreen></iframe>
-      </mat-step>
-    }
-  </mat-stepper>
+  @if (isScreenSmall) {
+    <mat-vertical-stepper>
+      @for (key of videoKeys; track key) {
+        <mat-step [label]="keyNames[key]" [completed]="false">
+          <iframe [src]="getVideoUrl(data.video[key])" frameborder="0" allowfullscreen></iframe>
+        </mat-step>
+      }
+    </mat-vertical-stepper>
+  }
+  @else {
+    <mat-stepper>
+      @for (key of videoKeys; track key) {
+        <mat-step [label]="keyNames[key]" [completed]="false">
+          <iframe [src]="getVideoUrl(data.video[key])" frameborder="0" allowfullscreen></iframe>
+        </mat-step>
+      }
+    </mat-stepper>
+  }
 </mat-dialog-content>
