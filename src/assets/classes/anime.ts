@@ -1101,15 +1101,15 @@ export const animes: Anime[] = [
     video: { ja: 'https://youtu.be/yL-lcOMc-vQ?si=n_RSZ7yQMY7fEWfV', f: '' }
   },
   {
-    names: ["Black Lagoon"], audio: "au_245", n: 1,
+    names: ["Black Lagoon"], audio: "au_245", n: 1, pista: 'Spring 2006',
     video: { ja: 'https://youtu.be/3n52e3HsEOM?si=vfePo5XVXfzhiser', f: '' }
   },
   {
-    names: ["Eromanga Sensei"], audio: "au_246", n: 1,
+    names: ["Eromanga Sensei", "Eromanga-sensei"], audio: "au_246", n: 1, pista: 'Spring 2017',
     video: { ja: 'https://youtu.be/DeGw8-KwxM4?si=sVu6YPIVMKfCbd8G', f: '' }
   },
   {
-    names: ["Banana Fish"], audio: "au_247", n: 1,
+    names: ["Banana Fish"], audio: "au_247", n: 1, pista: 'Summer 2018',
     video: { ja: 'https://youtu.be/0z6FLH2HXl4?si=q8qbsoA5dhENy2v-', f: '' }
   }
 ];
