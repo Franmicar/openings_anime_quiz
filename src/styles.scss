@@ -56,7 +56,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
 
 .video-modal {
   // Estilos generales del modal
-  max-width: none;
+  max-width: none !important;
   width: 70vw;
   height: auto;
 
