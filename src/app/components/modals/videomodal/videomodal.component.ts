@@ -46,8 +46,13 @@ export class VideomodalComponent {
   }
 
   getVideoUrl(url: string): SafeResourceUrl {
-    const videoId = this.extractVideoId(url);
-    const embedUrl = `https://www.youtube.com/embed/${videoId}`;
+    let embedUrl;
+    if (url.includes('youtu')) {
+      const videoId = this.extractVideoId(url);
+      embedUrl = `https://www.youtube.com/embed/${videoId}`;
+    } else {
+      embedUrl = url;
+    }
     return this.sanitizer.bypassSecurityTrustResourceUrl(embedUrl);
   }
 

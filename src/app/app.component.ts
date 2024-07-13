@@ -108,23 +108,64 @@ export class AppComponent implements OnInit {
   }
 
   sort() {
+    const seasons = ['Winter', 'Spring', 'Summer', 'Fall'];
+
     this.animes.sort((a, b) => {
+      // Función para obtener el año de la pista
+      const getPistaYear = (pista: string) => {
+        const yearRegex = /\b\d{4}\b/;
+        const match = pista.match(yearRegex);
+        return match ? parseInt(match[0]) : Number.MAX_SAFE_INTEGER;
+      };
+
+      // Función para obtener la temporada de la pista
+      const getPistaSeason = (pista: string) => {
+        for (let i = 0; i < seasons.length; i++) {
+          if (pista.includes(seasons[i])) {
+            return seasons[i];
+          }
+        }
+        return ''; // Si no encuentra temporada, devuelve vacío
+      };
+
       switch (this.sortControl.value) {
         case 'nsnc':
-          // Coloca primero los animes con valor de formulario vacío
+          // Ordena por formulario vacío primero
           return a.form?.value === '' ? -1 : 1;
         case 'fail':
-          // Coloca primero los animes cuyo formControl tiene errores
+          // Ordena por formControl inválido primero
           return a.form?.invalid ? -1 : 1;
         case 'success':
-          // Coloca primero los animes con un string y sin errores
+          // Ordena por formControl válido primero
           return a.form?.valid ? -1 : 1;
+        case 'old':
+          // Ordena por más antiguos primero, luego por temporada
+          const compareByYearOld = getPistaYear(a.pista) - getPistaYear(b.pista);
+          if (compareByYearOld !== 0) {
+            return compareByYearOld;
+          } else {
+            const seasonAOld = getPistaSeason(a.pista);
+            const seasonBOld = getPistaSeason(b.pista);
+            return seasons.indexOf(seasonAOld) - seasons.indexOf(seasonBOld);
+          }
+        case 'new':
+          // Ordena por más nuevos primero, luego por temporada
+          const compareByYearNew = getPistaYear(b.pista) - getPistaYear(a.pista);
+          if (compareByYearNew !== 0) {
+            return compareByYearNew;
+          } else {
+            const seasonANew = getPistaSeason(a.pista);
+            const seasonBNew = getPistaSeason(b.pista);
+            return seasons.indexOf(seasonANew) - seasons.indexOf(seasonBNew);
+          }
         default:
           // Criterio de ordenación por defecto (si es necesario)
           return 0;
       }
     });
   }
+
+
 
   doARas() {
     this.dialog.open(DeleteConfirmationComponent, {
