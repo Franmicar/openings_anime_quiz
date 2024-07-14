@@ -32,6 +32,7 @@ export class AnimeQuizCardComponent implements OnInit, AfterViewInit {
   nearMissIndex = 0;
   success = false;
   coincidence = 0;
+  audioLoaded: boolean = true;
 
   @ViewChild('inputElement') inputElement!: ElementRef;
   @ViewChild('audioPlayer') audioPlayer!: ElementRef<HTMLAudioElement>;
@@ -109,6 +110,10 @@ export class AnimeQuizCardComponent implements OnInit, AfterViewInit {
 
   onPlay(audio: HTMLAudioElement): void {
     this.audioService.play(audio);
+  }
+
+  onAudioError() {
+    this.audioLoaded = false;
   }
 
 }

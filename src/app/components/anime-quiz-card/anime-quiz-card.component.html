@@ -1,46 +1,48 @@
-<mat-card class="anime-card">
-  <mat-card-header class="w-100">
-    <mat-card-title class="title-card">
-      <span>Opening {{index + 1}}</span>
-      @if (anime?.pista) {
-      <mat-icon [matTooltip]="anime?.pista" style="margin-left: 15px;">help</mat-icon>
+@if (audioLoaded) {
+  <mat-card class="anime-card">
+    <mat-card-header class="w-100">
+      <mat-card-title class="title-card">
+        <span>Opening {{index + 1}}</span>
+        @if (anime?.pista) {
+        <mat-icon [matTooltip]="anime?.pista" style="margin-left: 15px;">help</mat-icon>
+        }
+      </mat-card-title>
+    </mat-card-header>
+    <audio controls #audioPlayer (play)="onPlay(audioPlayer)" (error)="onAudioError()">
+      <source src="{{'assets/audios/' + anime?.audio + '.mp3'}}" type="audio/mpeg">
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+    <mat-form-field class="example-form-field" [class.error-orange]="(coincidence >= 80 && coincidence < 100)"
+      appearance="outline">
+      <mat-label [class.orange]="(coincidence >= 80 && coincidence < 100) && anime.form?.touched">¿Cuál es el
+        anime?</mat-label>
+      <input #inputElement matInput type="text" [formControl]="anime?.form">
+      @if (anime?.form?.value) {
+      <button matSuffix mat-icon-button aria-label="Clear" (click)="anime?.form.setValue('')">
+        <mat-icon>close</mat-icon>
+      </button>
       }
-    </mat-card-title>
-  </mat-card-header>
-  <audio controls #audioPlayer (play)="onPlay(audioPlayer)">
-    <source src="{{'assets/audios/' + anime?.audio + '.mp3'}}" type="audio/mpeg">
-    Tu navegador no soporta el elemento de audio.
-  </audio>
-  <mat-form-field class="example-form-field" [class.error-orange]="(coincidence >= 80 && coincidence < 100)"
-    appearance="outline">
-    <mat-label [class.orange]="(coincidence >= 80 && coincidence < 100) && anime.form?.touched">¿Cuál es el
-      anime?</mat-label>
-    <input #inputElement matInput type="text" [formControl]="anime?.form">
-    @if (anime?.form?.value) {
-    <button matSuffix mat-icon-button aria-label="Clear" (click)="anime?.form.setValue('')">
-      <mat-icon>close</mat-icon>
-    </button>
-    }
-    @if (coincidence >= 80) {
-    <mat-error class="orange">{{nearMisses[nearMissIndex]}}</mat-error>
-    } @else {
-    <mat-error>{{errors[errorIndex]}}</mat-error>
-    }
-  </mat-form-field>
-  <div class="bottom-card">
-    @if (success) {
-      @if (anime.audio === 'au_31') {
-      <div class="success">Correcteiro! ✔️</div>
+      @if (coincidence >= 80) {
+      <mat-error class="orange">{{nearMisses[nearMissIndex]}}</mat-error>
       } @else {
-      <div class="success">Correcto! ✔️</div>
+      <mat-error>{{errors[errorIndex]}}</mat-error>
       }
-    } @else {
-    <div>❓❓❓</div>
-    }
-    @if (success) {
-      <button mat-flat-button (click)="openVideo()" [disabled]="!anime?.video"><mat-icon>visibility</mat-icon>Ver</button>
-    } @else {
-      <button mat-flat-button (click)="anime?.form?.markAsTouched()"><mat-icon>check_circle</mat-icon>Comprobar</button>
-    }
-  </div>
-</mat-card>
+    </mat-form-field>
+    <div class="bottom-card">
+      @if (success) {
+        @if (anime.audio === 'au_31') {
+        <div class="success">Correcteiro! ✔️</div>
+        } @else {
+        <div class="success">Correcto! ✔️</div>
+        }
+      } @else {
+      <div>❓❓❓</div>
+      }
+      @if (success) {
+        <button mat-flat-button (click)="openVideo()" [disabled]="!anime?.video"><mat-icon>visibility</mat-icon>Ver</button>
+      } @else {
+        <button mat-flat-button (click)="anime?.form?.markAsTouched()"><mat-icon>check_circle</mat-icon>Comprobar</button>
+      }
+    </div>
+  </mat-card>
+}
