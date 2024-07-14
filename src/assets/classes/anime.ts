@@ -1213,7 +1213,7 @@ export const animes: Anime[] = [
     video: { ja: 'https://youtu.be/OifiVCnFKzM?si=BOlKm3OUbdm4WQmj', o: 'https://youtu.be/mH2wmyeiIpA?si=NyVP3tBcvF3pmoRa' }
   },
   {
-    names: ["Blue exorcis", "Ao no Exorcist"], audio: "au_262", n: 2, pista: 'Summer 2011',
+    names: ["Blue exorcist", "Ao no Exorcist"], audio: "au_262", n: 2, pista: 'Summer 2011',
     video: { ja: 'https://youtu.be/vSUsiPvJv2Q?si=RsCfObEaJmJ3L4KN', o: 'https://youtu.be/j-5F1QjPAkI?si=WdbI2TYdGrNA6QDb' }
   },
   {
