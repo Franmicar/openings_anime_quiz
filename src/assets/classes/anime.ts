@@ -183,7 +183,7 @@ export const animes: Anime[] = [
   },
   {
     names: ["Death Parade"], audio: "au_34", n: 1, pista: 'Winter 2015',
-    video: { ja: 'https://youtu.be/Ca5Tf5BDSYI?si=ZVNQkWZihvoOvwu7', o: 'https://youtu.be/9wh8FgsEtNQ?si=EjXWonAJdfSyxpuJ' }
+    video: { ja: 'https://youtu.be/L90XoAtwMic?si=4y6UTOGWQ4zCcnOq', o: 'https://youtu.be/9wh8FgsEtNQ?si=EjXWonAJdfSyxpuJ' }
   },
   {
     names: ["Death Note"], audio: "au_35", n: 1, pista: 'Fall 2006',
