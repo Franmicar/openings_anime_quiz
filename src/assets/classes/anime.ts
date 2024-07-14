@@ -235,7 +235,7 @@ export const animes: Anime[] = [
   },
   {
     names: ["Enen no Shouboutai", "Fire Force"], audio: "au_44", n: 1, pista: 'Summer 2019',
-    video: { ja: 'https://youtu.be/JBqxVX_LXvk?si=KPZL8LuE6QAGFeWp', o: 'https://youtu.be/wfCcs0vLysk?si=zWsQTyJCUDw4xH34' }
+    video: { ja: 'https://youtu.be/MRVajvqdy_Y?si=rBo4jaeWniORwvL5', o: 'https://youtu.be/wfCcs0vLysk?si=zWsQTyJCUDw4xH34' }
   },
   {
     names: ["JoJo no Kimyou na Bouken", "JoJo's Bizarre Adventure", "JoJo"], audio: "au_45", n: 7, pista: 'Fall 2016',
@@ -393,7 +393,7 @@ export const animes: Anime[] = [
   },
   {
     names: ["Kanojo, Okarishimasu", "Rent a Girlfriend", "Kanojo Okarishimasu"], audio: "au_81", pista: "Summer 2020", n: 1,
-    video: { ja: 'https://youtu.be/cM1WSovcn4I?si=WdphS4hEW7E3RO8A', o: 'https://youtu.be/I1hLZ2OchZ8?si=ggPPG4CZYyVfc6Sp' }
+    video: { ja: 'https://youtu.be/JuRHKearHag?si=9dKtoKM3cBC0YH8b', o: 'https://youtu.be/I1hLZ2OchZ8?si=ggPPG4CZYyVfc6Sp' }
   },
   {
     names: ["Steins;Gate"], audio: "au_82", pista: 'Spring 2011', n: 1,
