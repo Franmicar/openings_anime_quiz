@@ -2,10 +2,8 @@
   <mat-card class="anime-card">
     <mat-card-header class="w-100">
       <mat-card-title class="title-card">
-        <span>Opening {{index + 1}} {{anime.audio}}</span>
-        @if (anime?.pista) {
+        <span>Opening {{index + 1}}</span>
         <mat-icon [matTooltip]="anime?.pista" style="margin-left: 15px;">help</mat-icon>
-        }
       </mat-card-title>
     </mat-card-header>
     <audio controls #audioPlayer (play)="onPlay(audioPlayer)" (error)="onAudioError()">
