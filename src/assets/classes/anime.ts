@@ -9,12 +9,13 @@ export interface Anime {
   video: Object;
   pista: string;
   n?: number;
+  id?: string;
 }
 
 export const animes: Anime[] = [
   {
     names: ["Yamada-kun to Lv999 no Koi wo Suru", "Yamada-kun to Lv999", "My Love Story with Yamada-kun at Lv999"],
-    audio: "au_0", n: 1, pista: 'Spring 2023',
+    audio: "au_0", n: 1, pista: 'Spring 2023', id: '121QQUZhUglCAc8dBRvmpvfl1TwtY-btr',
     video: { ja: 'https://youtu.be/mkxZXJN3zjI?si=noe7Lp225e128XW5', o: 'https://youtu.be/L5rL0pBzmAE?si=v0fEOuIOSRb8UxA_' }
   },
   {

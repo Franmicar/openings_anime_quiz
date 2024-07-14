@@ -8,7 +8,7 @@
     </mat-card-title>
   </mat-card-header>
   <audio controls #audioPlayer (play)="onPlay(audioPlayer)">
-    <source src="{{'assets/audios/' + anime?.audio + '.mp3'}}" type="audio/mpeg">
+    <source [src]="'https://drive.google.com/uc?export=download&id=' + anime?.id" type="audio/mpeg">
     Tu navegador no soporta el elemento de audio.
   </audio>
   <mat-form-field class="example-form-field" [class.error-orange]="(coincidence >= 80 && coincidence < 100)"
