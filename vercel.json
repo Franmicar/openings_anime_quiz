@@ -2,22 +2,17 @@
   "version": 2,
   "builds": [
     {
-      "src": "src/**/*",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "src/assets/audios/**/*",
-      "use": "@vercel/static"
+      "src": "angular.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
     }
   ],
   "routes": [
     {
       "src": "/assets/(.*)",
-      "dest": "/src/assets/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/src/$1"
+      "dest": "/assets/$1"
     }
   ],
   "headers": [
