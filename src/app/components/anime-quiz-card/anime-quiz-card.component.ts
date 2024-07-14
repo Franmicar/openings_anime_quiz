@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -10,6 +10,7 @@ import { debounceTime } from 'rxjs';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { VideomodalComponent } from '../modals/videomodal/videomodal.component';
+import { AudioService } from '../../services/audio.service';
 
 @Component({
   selector: 'app-anime-quiz-card',
@@ -19,7 +20,7 @@ import { VideomodalComponent } from '../modals/videomodal/videomodal.component';
   templateUrl: './anime-quiz-card.component.html',
   styleUrl: './anime-quiz-card.component.scss'
 })
-export class AnimeQuizCardComponent implements OnInit {
+export class AnimeQuizCardComponent implements OnInit, AfterViewInit {
 
   @Input() anime: any;
   @Input() index: number = 0;
@@ -32,10 +33,21 @@ export class AnimeQuizCardComponent implements OnInit {
   success = false;
   coincidence = 0;
 
+  @ViewChild('inputElement') inputElement!: ElementRef;
+  @ViewChild('audioPlayer') audioPlayer!: ElementRef<HTMLAudioElement>;
+
+
   constructor(
     private data: DataService,
-    private dialog: MatDialog
+    private dialog: MatDialog,
+    private audioService: AudioService
   ) { }
+
+  ngAfterViewInit() {
+    this.audioPlayer.nativeElement.addEventListener('play', () => {
+      this.inputElement.nativeElement.focus();
+    });
+  }
 
   ngOnInit(): void {
     this.getData();
@@ -89,9 +101,14 @@ export class AnimeQuizCardComponent implements OnInit {
 
   openVideo() {
     this.dialog.open(VideomodalComponent,
-      {data: {video: this.anime.video, name: this.anime.names[0]},
-      panelClass: ['video-modal']
-    });
+      {
+        data: { video: this.anime.video, name: this.anime.names[0] },
+        panelClass: ['video-modal']
+      });
+  }
+
+  onPlay(audio: HTMLAudioElement): void {
+    this.audioService.play(audio);
   }
 
 }

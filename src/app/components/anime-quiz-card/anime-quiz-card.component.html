@@ -7,7 +7,7 @@
       }
     </mat-card-title>
   </mat-card-header>
-  <audio controls>
+  <audio controls #audioPlayer (play)="onPlay(audioPlayer)">
     <source src="{{'assets/audios/' + anime?.audio + '.mp3'}}" type="audio/mpeg">
     Tu navegador no soporta el elemento de audio.
   </audio>
@@ -15,7 +15,7 @@
     appearance="outline">
     <mat-label [class.orange]="(coincidence >= 80 && coincidence < 100) && anime.form?.touched">¿Cuál es el
       anime?</mat-label>
-    <input matInput type="text" [formControl]="anime?.form">
+    <input #inputElement matInput type="text" [formControl]="anime?.form">
     @if (anime?.form?.value) {
     <button matSuffix mat-icon-button aria-label="Clear" (click)="anime?.form.setValue('')">
       <mat-icon>close</mat-icon>
