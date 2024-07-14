@@ -1391,23 +1391,23 @@ export const animes: Anime[] = [
   },
   {
     names: ["Toaru Kagaku no Railgun S", "A Certain Scientific Railgun S"], audio: "au_305", n: 1, pista: 'Spring 2013',
-    video: { ja: 'https://youtu.be/Ie3natE3-DE?si=DZCb8OzAM0g6KVj_', f: '' }
+    video: { ja: 'https://youtu.be/Ie3natE3-DE?si=DZCb8OzAM0g6KVj_', o: 'https://youtu.be/e6g3mkqhFzo?si=yLlJYtut6g0ztTjX' }
   },
   {
     names: ["Star Driver: Kagayaki no Takuto", "Star Driver"], audio: "au_306", n: 2, pista: 'Spring 2011',
-    video: { ja: 'https://youtu.be/uSv4lUPShF4?si=90kdm-OMsVR6C4Pb', f: '' }
+    video: { ja: 'https://youtu.be/uSv4lUPShF4?si=90kdm-OMsVR6C4Pb', o: 'https://youtu.be/G_0EYoFa0sI?si=KuPLMZ2tdBnmiSah' }
   },
   {
     names: ["Kuroko no basket", "Kuroko's Basketball"], audio: "au_307", n: 1, pista: 'Spring 2012',
-    video: { ja: 'https://youtu.be/5RVEM8-UKlg?si=N_zY1nDiKybw210V', f: '' }
+    video: { ja: 'https://youtu.be/5RVEM8-UKlg?si=N_zY1nDiKybw210V', o: 'https://youtu.be/Gou49bzZrvo?si=8PUOYSdHafnCe_7D' }
   },
   {
     names: ["Mob psycho 100"], audio: "au_308", n: 2, pista: 'Winter 2019',
-    video: { ja: 'https://youtu.be/epZaT8B31-g?si=DJPnXvCbTwCOBnaJ', f: '' }
+    video: { ja: 'https://youtu.be/epZaT8B31-g?si=DJPnXvCbTwCOBnaJ', o: 'https://youtu.be/Ip7H4dXrfMM?si=eTEvTGtyL_0RWrIs' }
   },
   {
     names: ["Mahou Sensei Negima!", "Negima!", "Negima"], audio: "au_309", n: 2, pista: 'Spring 2005',
-    video: { ja: 'https://youtu.be/vgA7kahrD4o?si=TE5AIPDNru2pyrbC', f: '' }
+    video: { ja: 'https://youtu.be/vgA7kahrD4o?si=TE5AIPDNru2pyrbC', f: 'https://youtu.be/coSLiUHurUg?si=ePnF0jg0e_6rwiMh' }
   },
   {
     names: ["Psycho-pass"], audio: "au_310", n: 3, pista: "Fall 2014",
