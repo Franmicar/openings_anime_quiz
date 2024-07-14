@@ -30,7 +30,8 @@ import { CookiesComponent } from './components/cookies/cookies.component';
 export class AppComponent implements OnInit {
   title = 'openings-anime-quiz';
   rules = [];
-  animes: Anime[] = shuffleArray([...animes]);
+  // animes: Anime[] = shuffleArray([...animes]);
+  animes = animes;
   successes = 0;
   complete = false;
   sortControl = new FormControl<string | null>('');
