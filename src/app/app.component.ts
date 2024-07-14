@@ -207,6 +207,11 @@ export class AppComponent implements OnInit {
     window.open(url, '_blank');
   }
 
+  onPageChange(event: any) {
+    // Lógica para cargar los animes de la página 'event.pageIndex'
+    // Puedes ajustar según cómo estés manejando la paginación
+  }
+
 }
 
 export function checkAnimeNameValidator(animeNames: string[]): ValidatorFn {
