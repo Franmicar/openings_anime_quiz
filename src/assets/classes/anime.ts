@@ -261,7 +261,8 @@ export const animes: Anime[] = [
     }
   },
   {
-    names: ["Code Geass", "Code Geass: Hangyaku no Lelouch"], audio: "au_50", n: 1, pista: 'Fall 2006',
+    names: ["Code Geass: Hangyaku no Lelouch", "Code Geass: Lelouch of the Rebellion", "Code Geass"],
+    audio: "au_50", n: 1, pista: 'Fall 2006',
     video: { ja: 'https://youtu.be/G8CFuZ9MseQ?si=uExLOl6Swo_p8aLm', o: 'https://youtu.be/FUH9S44D1BM?si=DqCGwsbkouooy51_' }
   },
   {
