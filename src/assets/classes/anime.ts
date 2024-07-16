@@ -923,8 +923,10 @@ export const animes: Anime[] = [
   },
   {
     names: ["Pokemon"], audio: "au_192", n: 3, pista: '119-159',
-    video: { es: 'https://youtu.be/z0OUwsWjqds?si=K740gB0LnEg-Or78', ja: 'https://youtu.be/qa_95sP8II4?si=LVfVShHiXwCcUTOw',
-      f: 'https://youtu.be/a6xVdR0h8pQ?si=nFMr9SeeuI85nLHr' }
+    video: {
+      es: 'https://youtu.be/z0OUwsWjqds?si=K740gB0LnEg-Or78', ja: 'https://youtu.be/qa_95sP8II4?si=LVfVShHiXwCcUTOw',
+      f: 'https://youtu.be/a6xVdR0h8pQ?si=nFMr9SeeuI85nLHr'
+    }
   },
   {
     names: ["JoJo no Kimyou na Bouken", "JoJo's Bizarre Adventure", "JoJo"], audio: "au_193", n: 8, pista: 'Fall 2018',
@@ -932,8 +934,10 @@ export const animes: Anime[] = [
   },
   {
     names: ["Nintama Rantarou", "Ninja Boy Rantaro"], audio: "au_194", n: 1, pista: 'Spring 1993',
-    video: { es: 'https://youtu.be/ei9skqHkSKQ?si=rnl9e1q1HE1hgMQ_', ja: 'https://youtu.be/bl0F-sOYREE?si=T9ivJ-oJpNCrXSZQ',
-       f: 'https://youtu.be/MWp3gxDRK2o?si=UjfY3n1b8XJUMZNm' }
+    video: {
+      es: 'https://youtu.be/ei9skqHkSKQ?si=rnl9e1q1HE1hgMQ_', ja: 'https://youtu.be/bl0F-sOYREE?si=T9ivJ-oJpNCrXSZQ',
+      f: 'https://youtu.be/MWp3gxDRK2o?si=UjfY3n1b8XJUMZNm'
+    }
   },
   {
     names: ["Samurai Champloo"], audio: "au_195", n: 1, pista: 'Spring 2004',
@@ -1270,8 +1274,10 @@ export const animes: Anime[] = [
   {
     names: ["Shingeki no Bahamut: Genesis", "Rage of Bahamut: Genesis", "Shingeki no Bahamut"],
     audio: "au_275", n: 1, pista: 'Fall 2014',
-    video: { ja: 'https://youtu.be/kYW1wrYOxy8?si=l49RwECCrRWJNT2z', o: 'https://youtu.be/UG0WMZmkbm4?si=skIWJGMHBir7NU34',
-       f: 'https://youtu.be/y49vRTBks18?si=iQRwWuyztjrlJE9Y' }
+    video: {
+      ja: 'https://youtu.be/kYW1wrYOxy8?si=l49RwECCrRWJNT2z', o: 'https://youtu.be/UG0WMZmkbm4?si=skIWJGMHBir7NU34',
+      f: 'https://youtu.be/y49vRTBks18?si=iQRwWuyztjrlJE9Y'
+    }
   },
   {
     names: ["Akiba maid war", "Akiba Meido Sensou"], audio: "au_276", n: 1, pista: 'Fall 2022',
@@ -1625,5 +1631,766 @@ export const animes: Anime[] = [
   {
     names: ["Wind Breaker"], audio: "au_359", n: 1, pista: "Spring 2024",
     video: { ja: 'https://youtu.be/IuSAC8ZDf1A?si=QYWrTWky1skCAMdf', o: 'https://youtu.be/LFoyXEFaz2Q?si=e1f9qZvJvUJBkGjH' }
+  },
+  {
+    names: ["Kiznaiver"], audio: "au_360", n: 1, pista: "Spring 2016",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Mawaru penguindrum", "Penguindrum"], audio: "au_361", n: 1, pista: "Summer 2011",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Enen no Shouboutai", "Fire Force"], audio: "au_362", n: 2, pista: "Fall 2019",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Boku no hero Academia", "My Hero Academia"], audio: "au_363", n: 5, pista: "Summer 2018",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Boku no hero Academia", "My Hero Academia"], audio: "au_364", n: 7, pista: "Winter 2020",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Blue exorcist", "Ao no Exorcist"], audio: "au_365", n: 1, pista: "Spring 2011",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Naruto shippuden"], audio: "au_366", n: 19, pista: "459 - 479",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Sword Art Online: Alicization - War of Underworld", "Sword Art Online", "SAO"],
+    audio: "au_367", n: 8, pista: "Summer 2020",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Black clover"], audio: "au_368", n: 7, pista: "77 - 94",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["JoJo no Kimyou na Bouken", "JoJo's Bizarre Adventure", "JoJo"], audio: "au_369", n: 5, pista: "Spring 2016",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Haikyuu!!", "Haikyu!! Los Ases del Vóley"], audio: "au_370", n: 6, pista: "Winter 2020",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Naruto shippuden"], audio: "au_371", n: 7, pista: "154 - 179",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Tokyo Ghoul:re", "Tokyo Ghoul"], audio: "au_372", n: 4, pista: "Fall 2018",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Black clover"], audio: "au_373", n: 12, pista: "141 - 157",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Black clover"], audio: "au_374", n: 1, pista: "1 - 13",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Naruto shippuden"], audio: "au_375", n: 5, pista: "103 - 128",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Shingeki no Kyojin", "attack on titan"], audio: "au_376", n: 2, pista: "Summer 2013",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Kakegurui"], audio: "au_377", n: 1, pista: "Summer 2017",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Shingeki no Kyojin", "attack on titan"], audio: "au_378", n: 5, pista: "Spring 2019",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Ousama Ranking", "Ranking of Kings"], audio: "au_379", n: 1, pista: "Fall 2021",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Sword Art Online: Alicization", "Sword Art Online", "SAO"], audio: "au_380", n: 6, pista: "Winter 2019",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Mushishi Zoku Shou", "Mushi-shi: Next Passage", "Mushishi", "Mushi-Shi"], audio: "au_381", n: 2, pista: "Spring 2014",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Tokyo Ghoul:re", "Tokyo Ghoul"], audio: "au_382", n: 3, pista: "Spring 2018",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Kimetsu no Yaiba", "Demon Slayer"], audio: "au_383", n: 2, pista: "Fall 2021",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Shingeki no Kyojin", "attack on titan"], audio: "au_384", n: 4, pista: "Summer 2018",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Boku no hero Academia", "My Hero Academia"], audio: "au_385", n: 1, pista: "Spring 2016",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Gintama"], audio: "au_386", n: 21, pista: "354 - 367",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Fukumenkei Noise", "Anonymous Noise"], audio: "au_387", n: 1, pista: "Spring 2017",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Kuroko no basket", "Kuroko's Basketball"], audio: "au_388", n: 3, pista: "Fall 2013",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Fullmetal Alchemist: Brotherhood"], audio: "au_389", n: 5, pista: "51 - 60, 62",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Durarara!!x2 Ketsu", "Durarara"], audio: "au_390", n: 1, pista: "Winter 2016",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Bleach"], audio: "au_391", n: 9, pista: "190 - 214",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Rakudai Kishi no Cavalry", "Chivalry of a Failed Knight"], audio: "au_392", n: 1, pista: "Fall 2015",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Re:␣Hamatora", "Re:Hamatora"], audio: "au_393", n: 1, pista: "Summer 2014",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Sakamoto desu ga?", "Haven't You Heard? I'm Sakamoto"], audio: "au_394", n: 1, pista: "Spring 2016",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Guilty crown"], audio: "au_395", n: 2, pista: "Winter 2012",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Fate/Zero"], audio: "au_396", n: 1, pista: "Fall 2011",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Ao no Exorcist: Kyoto Fujouou-hen", "Blue Exorcist: Kyoto Saga", "Blue exorcist", "Ao no Exorcist"],
+    audio: "au_397", n: 3, pista: "Winter 2017",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Log Horizon"], audio: "au_398", n: 2, pista: "Fall 2014",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["JoJo no Kimyou na Bouken", "JoJo's Bizarre Adventure", "JoJo"], audio: "au_399", n: 9, pista: "Spring 2019",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Nanatsu no Taizai: Imashime no Fukkatsu", "Nanatsu no Taizai", "The Seven Deadly Sins"],
+    audio: "au_400", n: 3, pista: "Winter 2018",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Kill la Kill"], audio: "au_401", n: 2, pista: "Winter 2014",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Gintama"], audio: "au_402", n: 9, pista: "202 - 227",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Code Geass: Hangyaku no Lelouch R2", "Code Geass: Lelouch of the Rebellion R2", "Code Geass R2", "Code Geass"],
+    audio: "au_403", n: 2, pista: "Summer 2008",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Bleach"], audio: "au_404", n: 12, pista: "266 - 291",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Re:Creators"], audio: "au_405", n: 1, pista: "Spring 2017",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Monster Rancher", "Monster Farm: Enbanseki no Himitsu"], audio: "au_406", n: 1, pista: "Spring 1999",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Yamada-kun to 7-nin no Majo", "Yamada-kun and the Seven Witches"], audio: "au_407", n: 1, pista: "Spring 2015",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Azumanga Daiou", "Azumanga Daioh"], audio: "au_408", n: 1, pista: "Spring 2002",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Terra Formars"], audio: "au_409", n: 1, pista: "Fall 2014",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Berserk 2016", "Berserk"], audio: "au_410", n: 2, pista: "Spring 2017",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Inazuma eleven"], audio: "au_411", n: 5, pista: "88 - 107",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Vinland Saga"], audio: "au_412", n: 2, pista: "Fall 2019",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Kobayashi-san Chi no Maid Dragon", "Miss Kobayashi's Dragon Maid", "Miss Kobayashi's"],
+    audio: "au_413", n: 1, pista: "Winter 2017",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Vinland Saga"], audio: "au_414", n: 4, pista: "Spring 2023",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Delicious in dungeon", "Dungeon Meshi", "Tragones y mazmorras"], audio: "au_415", n: 1, pista: "Winter 2024",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Re:Monster"], audio: "au_416", n: 1, pista: "Spring 2024",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Koi wa Ameagari no You ni", "After the Rain"], audio: "au_417", n: 1, pista: "Winter 2018",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["One Piece"], audio: "au_418", n: 21, pista: "856 - 891",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Serial Experiments Lain"], audio: "au_419", n: 1, pista: "Summer 1998",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Vinland Saga"], audio: "au_420", n: 3, pista: "Winter 2023",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["The Yuzuki Family's Four Sons", "Yuzuki-san Chi no Yonkyoudai.", "Yuzuki-san Chi no Yonkyoudai."],
+    audio: "au_421", n: 1, pista: "Fall 2023",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Lycoris Recoil"], audio: "au_422", n: 1, pista: "Summer 2022",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Rokudenashi Majutsu Koushi to Akashic Records", "Akashic Records of Bastard Magic Instructor",
+      "Rokudenashi Majutsu Koushi"], audio: "au_423", n: 1, pista: "Spring 2017",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Shangri-La Frontier: Kusoge Hunter, Kamige ni Idoman to su", "Shangri-La Frontier"],
+    audio: "au_424", n: 1, pista: "Fall 2023",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Beastars"], audio: "au_425", n: 1, pista: "Fall 2019",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Blood+"], audio: "au_426", n: 3, pista: "Fall 2007",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Kuroko no basket", "Kuroko's Basketball"], audio: "au_427", n: 2, pista: "Spring 2012",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["2.43: Seiin Koukou Danshi Volley-bu", "2.43: Seiin High School Boys Volleyball Team"],
+    audio: "au_428", n: 1, pista: "Winter 2021",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Osomatsu-san", "Mr. Osomatsu"], audio: "au_429", n: 1, pista: "Fall 2015",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Cardcaptor Sakura: Clear Card", "Cardcaptor Sakura"], audio: "au_430", n: 1, pista: "Winter 2018",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Akuyaku Reijou Level 99: Watashi wa Ura-Boss desu ga Maou dewa Arimasen",
+      "Villainess Level 99: I May Be the Hidden Boss but I'm Not the Demon Lord", "Akuyaku Reijou Level 99", "Villainess Level 99"],
+    audio: "au_431", n: 1, pista: "Winter 2024",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Bokutachi wa Benkyou ga Dekinai", "We Never Learn: BOKUBEN"], audio: "au_432", n: 1, pista: "Spring 2019",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Sand Land: The Series", "Sand Land"], audio: "au_433", n: 1, pista: "Spring 2024",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Mahoutsukai no Yome", "The Ancient magus’ bride", "The Ancient Magus' Bride"], audio: "au_434", n: 1, pista: "Fall 2017",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Plastic Memories"], audio: "au_435", n: 1, pista: "Spring 2015",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Boku no hero Academia", "My Hero Academia"], audio: "au_436", n: 11, pista: "Winter 2023",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Ookami to Koushinryou 2024", "Spyce and wolf", "Ookami to Koushinryou"], audio: "au_437", n: 2, pista: "Summer 2024",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Summertime Render", "Summer Time Rendering"], audio: "au_438", n: 2, pista: "Summer 2022",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Free!", "Free! Eternal Summer"], audio: "au_439", n: 2, pista: "Summer 2014",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Free!", "Free! Dive to the Future"], audio: "au_440", n: 3, pista: "Summer 2018",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Dead Mount Death Play"], audio: "au_441", n: 1, pista: "Spring 2023",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Odd Taxi"], audio: "au_442", n: 1, pista: "Spring 2021",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Isekai Suicide Squad", "Suicide Squad Isekai"], audio: "au_443", n: 1, pista: "Summer 2024",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Eizouken ni wa Te wo Dasu na!", "Keep Your Hands Off Eizouken!"], audio: "au_444", n: 1, pista: "Winter 2020",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Hige wo Soru. Soshite Joshikousei wo Hirou.",
+      "Higehiro: After Being Rejected, I Shaved and Took in a High School Runaway", "Higehiro"],
+    audio: "au_445", n: 1, pista: "Spring 2021",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Koi to Yobu ni wa Kimochi Warui", "Koikimo"], audio: "au_446", n: 1, pista: "Spring 2021",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Mashle", "Mashle: Magic and Muscles"], audio: "au_447", n: 1, pista: "Spring 2023",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Oshi no Ko"], audio: "au_448", n: 2, pista: "Summer 2024",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Given"], audio: "au_449", n: 1, pista: "Summer 2019",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Vanitas no Karte", "The Case Study of Vanitas"], audio: "au_450", n: 1, pista: "Summer 2021",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Irozuku Sekai no Ashita kara", "Iroduku: The World in Colors", "Iroduko"],
+    audio: "au_451", n: 1, pista: "Fall 2018",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Air Gear"], audio: "au_452", n: 1, pista: "Spring 2006",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["91 Days"], audio: "au_453", n: 1, pista: "Summer 2016",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Delicious in dungeon", "Dungeon Meshi", "Tragones y mazmorras"], audio: "au_454", n: 2, pista: "Spring 2024",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Ore wo Suki nano wa Omae dake ka yo", "ORESUKI Are you the only one who loves me?", "Oresuki"],
+    audio: "au_455", n: 1, pista: "Fall 2019",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Kage no Jitsuryokusha ni Naritakute!", "The Eminence in Shadow"], audio: "au_456", n: 1, pista: "Fall 2022",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Nichijou", "Nichijou - My Ordinary Life"], audio: "au_457", n: 1, pista: "Spring 2011",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Tales of Zestiria the Cross", "Tales of Zestiria the X", "Tales of Zestiria"],
+    audio: "au_458", n: 1, pista: "Summer 2016",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Kanojo, Okarishimasu", "Rent-a-Girlfriend", "Kanojo Okarishimasu", "Rent a Girlfriend"],
+    audio: "au_459", n: 3, pista: "Summer 2023",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Wonder Egg Priority"], audio: "au_460", n: 1, pista: "Winter 2021",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Blood Lad"], audio: "au_461", n: 1, pista: "Summer 2013",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Hataraku Maou-sama!", "The Devil is a Part-Timer!"], audio: "au_462", n: 3, pista: "Summer 2023",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Edens Zero"], audio: "au_463", n: 1, pista: "Spring 2021",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Kobayashi-san Chi no Maid Dragon", "Miss Kobayashi's Dragon Maid", "Miss Kobayashi's"],
+    audio: "au_464", n: 2, pista: "Summer 2021",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Kamisama Hajimemashita", "Kamisama Kiss"], audio: "au_465", n: 1, pista: "Fall 2012",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Hunter x Hunter 1999", "Hunter x Hunter"], audio: "au_466", n: 1, pista: "Fall 1999",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Shangri-La Frontier: Kusoge Hunter, Kamige ni Idoman to su", "Shangri-La Frontier"],
+    audio: "au_467", n: 2, pista: "Winter 2024",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Watashi no Oshi wa Akuyaku Reijou.", "I'm in Love with the Villainess"], audio: "au_468", n: 1, pista: "Fall 2023",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Bakemonogatari"], audio: "au_469", n: 5, pista: "Summer 2009",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Akatsuki no Yona", "Yona of the Dawn"], audio: "au_470", n: 1, pista: "Fall 2014",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Akatsuki no Yona", "Yona of the Dawn"], audio: "au_471", n: 2, pista: "Winter 2015",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Mahoutsukai no Yome", "The Ancient magus’ bride", "The Ancient Magus' Bride"],
+    audio: "au_472", n: 3, pista: "Spring 2023",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Durarara!!"], audio: "au_473", n: 1, pista: "Winter 2010",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Yuukoku no Moriarty", "Moriarty the Patriot"], audio: "au_474", n: 2, pista: "Spring 2021",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Orange"], audio: "au_475", n: 1, pista: "Summer 2016",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Komi-san wa, Comyushou desu.", "Komi Can't Communicate", "Komi-san"], audio: "au_476", n: 2, pista: "Spring 2022",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Yuru Camp△", "Laid-Back Camp", "Yuru Camp"], audio: "au_477", n: 1, pista: "Winter 2018",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Kaichou wa Maid-sama!", "Maid Sama!"], audio: "au_478", n: 1, pista: "Spring 2010",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Citrus"], audio: "au_479", n: 1, pista: "Winter 2018",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Mushoku Tensei: Isekai Ittara Honki Dasu", "Mushoku Tensei: Jobless Reincarnation", "Mushoku Tensei"],
+    audio: "au_480", n: 3, pista: "Spring 2024",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Keijo!!!!!!!!", "Keijo"], audio: "au_481", n: 1, pista: "Fall 2016",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Appare-Ranman!"], audio: "au_482", n: 1, pista: "Spring 2020",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Zankyou no Terror", "Terror in Resonance"], audio: "au_483", n: 1, pista: "Summer 2014",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["86 Eighty-Six", "86"], audio: "au_484", n: 2, pista: "Fall 2021",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Girls Band Cry"], audio: "au_485", n: 1, pista: "Spring 2024",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["3-Gatsu no lion", "San-Gatsu no lion", "March Comes In Like a Lion"], audio: "au_486", n: 3, pista: "Fall 2017",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Ping Pong the Animation"], audio: "au_487", n: 1, pista: "Spring 2014",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Devilman: Crybaby"], audio: "au_488", n: 1, pista: "Winter 2018",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Yowamushi Pedal: Glory Line", "Yowamushi Pedal"], audio: "au_489", n: 7, pista: "Winter 2018",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Steins;Gate 0", "Steins;Gate"], audio: "au_490", n: 2, pista: "Spring 2018",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["2.5-jigen no Ririsa", "2.5 Dimensional Seduction"], audio: "au_491", n: 1, pista: "Summer 2024",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Sora yori mo Tooi Basho", "A Place Further Than The Universe", "Yorimoi"], audio: "au_492", n: 1, pista: "Winter 2018",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Boku no hero Academia", "My Hero Academia"], audio: "au_493", n: 12, pista: 'Spring 2024',
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["SK∞", "SK8 the Infinity"], audio: "au_494", n: 1, pista: "Winter 2021",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["KonoSuba", "Kono Subarashii Sekai ni Shukufuku wo!", "Kono Subarashii Sekai ni Shukufuku wo!"],
+    audio: "au_495", n: 3, pista: "Spring 2024",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Tokidoki Bosotto Russia-go de Dereru Tonari no Alya-san", "Alya Sometimes Hides Her Feelings in Russian", "Roshidere"],
+    audio: "au_496", n: 1, pista: "Summer 2024",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Shokugeki no Souma", "Food Wars!"], audio: "au_497", n: 4, pista: 'Fall 2017',
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Isekai de Cheat Skill wo Te ni Shita Ore wa, Genjitsu Sekai wo mo Musou Suru: Level Up wa Jinsei wo Kaeta",
+      "I Got a Cheat Skill in Another World and Became Unrivaled in The Real World, Too", "Isekai de Cheat Skill"],
+    audio: "au_498", n: 1, pista: "Spring 2023",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Death note"], audio: "au_499", n: 2, pista: "Winter 2007",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["5-toubun no Hanayome", "Go-toubun no Hanayome", "The Quintessential Quintuplets"],
+    audio: "au_500", n: 1, pista: "Winter 2019",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["5-toubun no Hanayome", "Go-toubun no Hanayome", "The Quintessential Quintuplets"],
+    audio: "au_501", n: 2, pista: "Winter 2021",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Nanatsu no Taizai: Kamigami no Gekirin", "Nanatsu no Taizai", "The Seven Deadly Sins"],
+    audio: "au_502", n: 6, pista: "Winter 2020",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Tate no Yuusha no Nariagari", "The Rising of the Shield Hero", "Tate no Yuusha"],
+    audio: "au_503", n: 3, pista: "Spring 2022",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Tate no Yuusha no Nariagari", "The Rising of the Shield Hero", "Tate no Yuusha"],
+    audio: "au_504", n: 4, pista: "Fall 2023",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Lv2 kara Cheat datta Motoyuusha Kouho no Mattari Isekai Life",
+      "Chillin' in Another World with Level 2 Super Cheat Powers", "Chillin' in Another World"],
+    audio: "au_505", n: 1, pista: "Spring 2024",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Fate/Grand Order: Zettai Majuu Sensen Babylonia",
+      "Fate/Grand Order: Absolute Demonic Front - Babylonia", "Fate/Grand Order Babylonia", "Fate/Babylonia"],
+    audio: "au_506", n: 1, pista: "Fall 2019",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Kimi ni todoke", "Kimi ni Todoke: From Me to You"], audio: "au_507", n: 1, pista: "Fall 2009",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Boukyaku Battery", "Oblivion Battery"], audio: "au_508", n: 1, pista: "Spring 2024",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Yahari Ore no Seishun Love Comedy wa Machigatteiru.", "My Teen Romantic Comedy SNAFU", "Oregairu"],
+    audio: "au_509", n: 1, pista: "Spring 2013",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Yahari Ore no Seishun Love Comedy wa Machigatteiru. Zoku", "My Teen Romantic Comedy SNAFU TOO!", "Oregairu"],
+    audio: "au_510", n: 2, pista: "Spring 2015",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Kami no Tou", "Tower of God"], audio: "au_511", n: 1, pista: "Spring 2020",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Overlord"], audio: "au_512", n: 4, pista: "Summer 2022",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e", "Classroom of the Elite"],
+    audio: "au_513", n: 3, pista: "Winter 2024",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Tensei shitara Slime Datta Ken", "That Time I Got Reincarnated as a Slime", "Tensura"],
+    audio: "au_514", n: 4, pista: "Summer 2021",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Hyouka"], audio: "au_515", n: 2, pista: "Summer 2021",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Shuumatsu no Walküre", "Shuumatsu no Valkyrie", "Record of Ragnarok"],
+    audio: "au_516", n: 2, pista: "January 2023",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Ninja Kamui"], audio: "au_517", n: 1, pista: "Winter 2024",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Golden Kamuy"], audio: "au_518", n: 1, pista: "Spring 2018",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Gintama"], audio: "au_519", n: 11, pista: "241 - 252",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["One piece"], audio: "au_520", n: 26, pista: "1089-?",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Owari no Seraph", "Seraph of the End: Vampire Reign"], audio: "au_521", n: 1, pista: "Spring 2015",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Fairy Tail"], audio: "au_522", n: 15, pista: "176 - 188",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Bleach"],  audio: "au_523", n: 16, pista: "368 - 379",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Fate/Zero"], audio: "au_524", n: 2, pista: "Spring 2012",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Gintama"], audio: "au_525", n: 4, pista: "76 - 98",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka",
+      "Is It Wrong to Try to Pick Up Girls in a Dungeon?", "Danmachi"], audio: "au_526", n: 1, pista: "Spring 2015",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Great teacher onizuka", "GTO"], audio: "au_527", n: 1, pista: "Fall 1999",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Gate: Jieitai Kanochi nite, Kaku Tatakaeri", "GATE"], audio: "au_528", n: 1, pista: "Summer 2015",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Bleach"], audio: "au_529", n: 10, pista: "215 - 242",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Bungou Stray Dogs", "Bungo Stray Dogs"],
+    audio: "au_530", n: 2, pista: "Fall 2016",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Bungou Stray Dogs", "Bungo Stray Dogs"], audio: "au_531", n: 5, pista: "Summer 2023",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Kimetsu no Yaiba", "Demon Slayer"], audio: "au_532", n: 5, pista: "Spring 2024",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Fullmetal Alchemist: Brotherhood"], audio: "au_533", n: 3, pista: "27 - 38",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Re:Zero kara Hajimeru Isekai Seikatsu", "Re:Zero"], audio: "au_534", n: 1, pista: "Summer 2020",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Unnamed Memory"], audio: "au_535", n: 1, pista: "Spring 2024",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Skip to Loafer", "Skip and Loafer"], audio: "au_536", n: 1, pista: "Spring 2023",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Nagi no Asu kara", "A Lull in the Sea"], audio: "au_537", n: 2, pista: "Winter 2014",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Akame ga Kill!"], audio: "au_538", n: 1, pista: "Summer 2014",
+    video: { ja: '', o: '' }
+  },
+  {
+    names: ["Inazuma eleven"], audio: "au_539", n: 4, pista: "68 - 87",
+    video: { ja: '', o: '' }
   }
 ];
