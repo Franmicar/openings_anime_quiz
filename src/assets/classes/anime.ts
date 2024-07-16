@@ -18,7 +18,7 @@ export const animes: Anime[] = [
     video: { ja: 'https://youtu.be/mkxZXJN3zjI?si=noe7Lp225e128XW5', o: 'https://youtu.be/L5rL0pBzmAE?si=v0fEOuIOSRb8UxA_' }
   },
   {
-    names: ["Hunter x Hunter"], audio: "au_1", n: 1, pista: 'Fall 2011',
+    names: ["Hunter x Hunter 2011", "Hunter x Hunter"], audio: "au_1", n: 1, pista: 'Fall 2011',
     video: { ja: 'https://youtu.be/faqmNf_fZlE?si=YmEdONdkbGCGmmvV', f: 'https://youtu.be/6q3gd47tTVw?si=tzilzK-LYmCo7wpD' }
   },
   {
@@ -26,7 +26,7 @@ export const animes: Anime[] = [
     video: { ja: 'https://youtu.be/GwaRztMaoY0?si=lZB4osTdQyICzkZB', f: 'https://youtu.be/_LWXAPywCV4?si=mJCMIheI6j-BX19n' }
   },
   {
-    names: ["Shinseiki Evangelion", "Neon Genesis Evangelion"], audio: "au_3", n: 1, pista: 'Fall 1995',
+    names: ["Shinseiki Evangelion", "Neon Genesis Evangelion", "Evangelion"], audio: "au_3", n: 1, pista: 'Fall 1995',
     video: { ja: 'https://youtu.be/fShlVhCfHig?si=2pYs9AxiyZ8aXPOb', f: 'https://youtu.be/o6wtDPVkKqI?si=t4BL-QCkraDjkqsE' }
   },
   {
@@ -94,7 +94,7 @@ export const animes: Anime[] = [
     video: { ja: 'https://youtu.be/KOWcj7XKnfQ?si=afU90ZWpo2nJC7Ww', o: 'https://youtu.be/saah9UTwaUI?si=KJvFi4ZhbTgO4GWX' }
   },
   {
-    names: ["Re:Zero kara Hajimeru Isekai Seikatsu", "Re:Zero"], audio: "au_19", n: 3, pista: 'Summer 2020',
+    names: ["Re:Zero kara Hajimeru Isekai Seikatsu", "Re:Zero"], audio: "au_19", n: 3, pista: 'Winter 2021',
     video: {
       ja: "https://youtu.be/FmGGSI3zIRA?si=Qp233z3kGrXu1rkn",
       o: "https://youtu.be/uaRnwnmqrws?si=CglUImkaTsb_hKqe"
@@ -204,7 +204,7 @@ export const animes: Anime[] = [
     }
   },
   {
-    names: ["Fullmetal Alchemist: Brotherhood"], audio: "au_38", n: 1, pista: 'Spring 2009',
+    names: ["Fullmetal Alchemist: Brotherhood"], audio: "au_38", n: 1, pista: '1 - 14',
     video: {
       ja: 'https://youtu.be/HRwK2u0Freo?si=BR1RrfKvlkKbsIZS', o: 'https://youtu.be/ZGoujlyWJv8?si=z7pQugxOgT0f6CdC',
       f: 'https://youtu.be/4cwQBiOmQPs?si=Cz721oqGnY2rZWaj'
@@ -349,7 +349,7 @@ export const animes: Anime[] = [
     video: { ja: 'https://youtu.be/Tt4_enX63K0?si=cBoAWeaoO55gnmw0', o: 'https://youtu.be/zJRZ9ybACB4?si=ekJHGH-TxNesJyNM' }
   },
   {
-    names: ["Gintama"], audio: "au_71", pista: "Spring 2013", n: 13,
+    names: ["Gintama"], audio: "au_71", pista: "257 - 265", n: 13,
     video: { ja: 'https://youtu.be/GQRMESLHVc0?si=SqSxICNQXut7AhnW', o: 'https://youtu.be/CpGPYFU4n0Y?si=Xj5h9LZ46xciVHxm' }
   },
   {
@@ -357,7 +357,7 @@ export const animes: Anime[] = [
     video: { ja: 'https://youtu.be/dRsKZt9vAyM?si=IUVDA3uLnBADWspu', o: 'https://youtu.be/FLs2faYqoNU?si=awajOintt8N8MJuZ' }
   },
   {
-    names: ["Fairy Tail"], audio: "au_73", n: 1, pista: 'Fall 2009',
+    names: ["Fairy Tail"], audio: "au_73", n: 1, pista: '1 - 11',
     video: { ja: 'https://youtu.be/9jvVBVcZ0-Y?si=3iHi_kjMTCA-DW-s', o: 'https://youtu.be/68Eq_2VCRYA?si=pLcL145v9Tbdz_i0' }
   },
   {
@@ -378,7 +378,7 @@ export const animes: Anime[] = [
     video: { ja: 'https://youtu.be/md_jaWVuaCM?si=0AKiV6RlPdJqggj7', o: 'https://youtu.be/kQYLHjgUh_g?si=aemk54o05gcp4IVF' }
   },
   {
-    names: ["Kakegurui"], audio: "au_78", pista: "Spring 2019", n: 2,
+    names: ["Kakegurui××", "Kakegurui"], audio: "au_78", pista: "Spring 2019", n: 2,
     video: { ja: 'https://youtu.be/KU3QM1pJffs?si=AZYnMRdf1_DwpcOk', o: 'https://youtu.be/xgH4Ez4ZhLw?si=QS-PR_dTi4-TTY4q' }
   },
   {
@@ -393,7 +393,8 @@ export const animes: Anime[] = [
     video: { ja: 'https://youtu.be/JkmMTiUJvvc?si=X4Mkf_buGD33rmoH', f: 'https://youtu.be/EJYKsY0Vcts?si=3YGexCZBAf8GjSyw' }
   },
   {
-    names: ["Kanojo, Okarishimasu", "Rent a Girlfriend", "Kanojo Okarishimasu"], audio: "au_81", pista: "Summer 2020", n: 1,
+    names: ["Kanojo, Okarishimasu", "Rent a Girlfriend", "Kanojo Okarishimasu", "Rent-a-Girlfriend"],
+    audio: "au_81", pista: "Summer 2020", n: 1,
     video: { ja: 'https://youtu.be/JuRHKearHag?si=9dKtoKM3cBC0YH8b', o: 'https://youtu.be/I1hLZ2OchZ8?si=ggPPG4CZYyVfc6Sp' }
   },
   {
@@ -652,7 +653,7 @@ export const animes: Anime[] = [
     }
   },
   {
-    names: ["One Piece"], audio: "au_134", n: 1, pista: 'Fall 1999',
+    names: ["One Piece"], audio: "au_134", n: 1, pista: '1 - 47, 1000',
     video: {
       es: 'https://youtu.be/dSUQXSXgvVw?si=UaS3_c0LJAC7cfin', ja: 'https://youtu.be/gcjdXMfYIe4?si=gk-XrsMQhnQ_xXIv',
       f: 'https://youtu.be/IHhNTt3oxtY?si=ZAU3eiBv7PzQm1_2'
@@ -691,7 +692,7 @@ export const animes: Anime[] = [
     video: { ja: 'https://youtu.be/XjHqfhOcK_0?si=O2e6phJRLz2o-2nU', o: 'https://youtu.be/IKHGAuNaGuA?si=V2aA2A1s7uk6v7gy' }
   },
   {
-    names: ["Fullmetal Alchemist: Brotherhood"], audio: "au_142", n: 2, pista: '15-26',
+    names: ["Fullmetal Alchemist: Brotherhood"], audio: "au_142", n: 2, pista: '15 - 26',
     video: { ja: 'https://youtu.be/aZcHqqqeNUs?si=LpgUy1ra5zLXUSP_', o: 'https://youtu.be/o71vyLnNtBo?si=Uk-FQGe8cwjVZ_Nd' }
   },
   {
@@ -807,7 +808,7 @@ export const animes: Anime[] = [
     video: { ja: 'https://youtu.be/9vc2r0s6M_M?si=RahQxmFW1MYB_loq', o: 'https://youtu.be/8QHmMwqY5Lc?si=iMtETl4BBM-Qa1qz' }
   },
   {
-    names: ["Fullmetal Alchemist: Brotherhood"], audio: "au_167", n: 4, pista: '40-50',
+    names: ["Fullmetal Alchemist: Brotherhood"], audio: "au_167", n: 4, pista: '39 - 50',
     video: { ja: 'https://youtu.be/dnIlB6JhLyI?si=FBNe5lsdYib5LYzJ', o: 'https://youtu.be/xslAjvvlJkE?si=o3bG4UVULjbOGJcN' }
   },
   {
@@ -967,7 +968,7 @@ export const animes: Anime[] = [
     video: { ja: 'https://youtu.be/SRn99oN1p_c?si=YD8X8_LFECZiPeWx', o: 'https://youtu.be/nJ6A6GC_ki4?si=nt6SCG51qxc9SV_G' }
   },
   {
-    names: ["Naruto Shippuden"], audio: "au_203", n: 1, pista: 'Winter 2007',
+    names: ["Naruto Shippuden"], audio: "au_203", n: 1, pista: '1 - 30',
     video: { ja: 'https://youtu.be/vxvP9zSOL7s?si=PO_Bw-lTHfjfcsQn', o: 'https://youtu.be/ipBCtl0j4O8?si=ESzfcUj2SF0ahCqq' }
   },
   {
@@ -1095,7 +1096,7 @@ export const animes: Anime[] = [
     video: { ja: 'https://youtu.be/bpybmJ4GhG8?si=dk42hRTrdUilAwyJ', o: 'https://youtu.be/rbd8qYLDjRo?si=DqbvqfQD39_qHYaT' }
   },
   {
-    names: ["Jibaku Shounen Hanako-kun", "Toilet-Bound Hanako-kun"], audio: "au_233", n: 1, pista: 'Winter 2020',
+    names: ["Jibaku Shounen Hanako-kun", "Toilet-Bound Hanako-kun", "Hanako-kun"], audio: "au_233", n: 1, pista: 'Winter 2020',
     video: { ja: 'https://youtu.be/da3bYroZNSE?si=1tZ0sp6vffH4ENYe', o: 'https://youtu.be/yExFsoZRA8k?si=J2AH-o7kesHnhBdM' }
   },
   {
@@ -1115,7 +1116,8 @@ export const animes: Anime[] = [
     video: { ja: 'https://youtu.be/voC3PvD_iZw?si=wxKkb6M5fsZQQ_ID', o: 'https://youtu.be/5VRyiaszGtA?si=bb0lGBXK5Jbq0NrJ' }
   },
   {
-    names: ["Tensei shitara Slime Datta Ken", "That Time I Got Reincarnated as a Slime"], audio: "au_238", n: 1, pista: 'Fall 2018',
+    names: ["Tensei shitara Slime Datta Ken", "That Time I Got Reincarnated as a Slime", "Tensura"],
+    audio: "au_238", n: 1, pista: 'Fall 2018',
     video: { ja: 'https://youtu.be/SqdeDAbejkQ?si=re_9lte9fHrvwBmM', o: 'https://youtu.be/W1O8iRu0V4A?si=XFBfgZp1CXIG8I5L' }
   },
   {
@@ -1226,7 +1228,7 @@ export const animes: Anime[] = [
     video: { ja: 'https://youtu.be/m_QP5_rdH_g?si=I0BiyKULIurri_s3', f: 'https://youtu.be/JzurtO4yHrM?si=v9-mc1YymEIMp0M1' }
   },
   {
-    names: ["Free!", "Free! - Iwatobi Swim Club"], audio: "au_265", n: 1, pista: 'Summer 2013',
+    names: ["Free! - Iwatobi Swim Club", "Free!"], audio: "au_265", n: 1, pista: 'Summer 2013',
     video: { ja: 'https://youtu.be/bSB9am38_8Q?si=ARCpkERwBBMkmsnf', o: 'https://youtu.be/P8JV2xnyJ9Q?si=UR0QRPUArsrC10aA' }
   },
   {
@@ -1276,7 +1278,7 @@ export const animes: Anime[] = [
     video: { ja: 'https://youtu.be/JLY2gS0o-gE?si=d6ozXL71yEqvMbVH', f: 'https://youtu.be/l_A-ufGHYvk?si=q9vY_3gsSBF481dz' }
   },
   {
-    names: ["3-Gatsu no lion", "March Comes In Like a Lion"], audio: "au_277", n: 1, pista: 'Fall 2016',
+    names: ["3-Gatsu no lion", "March Comes In Like a Lion", "San-Gatsu no lion"], audio: "au_277", n: 1, pista: 'Fall 2016',
     video: { ja: 'https://youtu.be/cKWqPXkLgzY?si=SR1tMFCbfBpWYRJF', o: 'https://youtu.be/bRWQckbQ9tQ?si=HQ8ItZkPwCtfp-Tl' }
   },
   {
@@ -1301,7 +1303,7 @@ export const animes: Anime[] = [
     video: { ja: 'https://youtu.be/eRJyYfAq2tk?si=PjyaZMuqbmaZbzI_', o: 'https://youtu.be/pkw_Hl3qXCs?si=Xt0RsA609mxYuHGC' }
   },
   {
-    names: ["Sword Art Online", "SAO"], audio: "au_283", n: 6, pista: 'Fall 2018',
+    names: ["Sword Art Online: Alicization", "Sword Art Online", "SAO"], audio: "au_283", n: 5, pista: 'Fall 2018',
     video: { ja: 'https://youtu.be/3hdJ8PKNXrc?si=iQdsCeclS1j7Qgb8', o: 'https://youtu.be/v2tmzEuVEz8?si=XeeIfbFSA9BXG0V-' }
   },
   {
@@ -1338,11 +1340,11 @@ export const animes: Anime[] = [
     video: { ja: 'https://youtu.be/_vvL3z3pAs0?si=DOwRypa5xV4_XzrN', o: 'https://youtu.be/wol-XHb1VhM?si=ld8PuDhmaU1PnrMx' }
   },
   {
-    names: ["Sword Art Online", "SAO"], audio: "au_292", n: 4, pista: 'Fall 2014',
+    names: ["Sword Art Online II", "Sword Art Online", "SAO"], audio: "au_292", n: 4, pista: 'Fall 2014',
     video: { ja: 'https://youtu.be/yPU0ykIeumw?si=Ua6-5am2pENPRAUf', o: 'https://youtu.be/pxr4lSNluEo?si=in57GfjOYfC9fBmL' }
   },
   {
-    names: ["Fairy tail"], audio: "au_293", n: 16, pista: '176 - 187',
+    names: ["Fairy tail"], audio: "au_293", n: 16, pista: '189 - 203',
     video: { ja: 'https://youtu.be/CeGRYuEq2Rk?si=1HjOxl04raORf3Xk', o: 'https://youtu.be/2snm79cxw_8?si=bp_Y6lSCEfqZfags' }
   },
   {
@@ -1350,7 +1352,7 @@ export const animes: Anime[] = [
     video: { ja: 'https://youtu.be/XaztbhhCEaE?si=MEKiPu5EubFmbPy7', o: 'https://youtu.be/kgQtOZb1qLA?si=Oh1buGpf5RjoXlJe' }
   },
   {
-    names: ["Fairy tail"], audio: "au_295", n: 21, pista: '240 - 252',
+    names: ["Fairy tail"], audio: "au_295", n: 21, pista: '253 - 265',
     video: { ja: 'https://youtu.be/MkBVsAYUc-g?si=g-DsK_P7uvrGY4Ao', o: 'https://youtu.be/x2i_fsR0Lb8?si=d-Fia0y6pk7PC15L' }
   },
   {
@@ -1358,7 +1360,7 @@ export const animes: Anime[] = [
     video: { ja: 'https://youtu.be/ibkhGFKhyW8?si=eDNuIdDLMTXtssFD', o: 'https://youtu.be/o57sPCm3JBw?si=edF6Zfg01wv56nRq' }
   },
   {
-    names: ["Highschool of the dead"], audio: "au_297", n: 1, pista: 'Summer 2010',
+    names: ["Highschool of the dead", "HOTD"], audio: "au_297", n: 1, pista: 'Summer 2010',
     video: { ja: 'https://youtu.be/ZDRvkxKcEqY?si=xfXmuWAr9arQV6s8', o: 'https://youtu.be/Vkq9y80Guws?si=L7SgaudK00y_qY1x' }
   },
   {
@@ -1391,7 +1393,8 @@ export const animes: Anime[] = [
     video: { ja: 'https://youtu.be/5yb2N3pnztU?si=WHvKug0a-eiPI77e', o: 'https://youtu.be/fhzKLBZJC3w?si=eW32O0Ca8MIH0tBD' }
   },
   {
-    names: ["Toaru Kagaku no Railgun S", "A Certain Scientific Railgun S"], audio: "au_305", n: 1, pista: 'Spring 2013',
+    names: ["Toaru Kagaku no Railgun S", "A Certain Scientific Railgun", "Toaru Kagaku no Railgun"],
+    audio: "au_305", n: 3, pista: 'Spring 2013',
     video: { ja: 'https://youtu.be/Ie3natE3-DE?si=DZCb8OzAM0g6KVj_', o: 'https://youtu.be/e6g3mkqhFzo?si=yLlJYtut6g0ztTjX' }
   },
   {
@@ -1482,7 +1485,7 @@ export const animes: Anime[] = [
     video: { ja: 'https://youtu.be/qOB7BNs9j3I?si=cTx1LccVA9WJ1r6O', f: 'https://youtu.be/PIvnN-rOKmU?si=FRWyUHRCq9_79nIQ' }
   },
   {
-    names: ["Kidou Senshi Gundam: Suisei no Majo", "Mobile Suit Gundam: The Witch from Mercury", "Mobile Suit Gundam"],
+    names: ["Kidou Senshi Gundam: Suisei no Majo", "Mobile Suit Gundam: The Witch from Mercury", "Mobile Suit Gundam", "G-Witch"],
     audio: "au_326", n: 1, pista: "Fall 2022",
     video: { ja: 'https://youtu.be/uqZ9tCxq9Yw?si=sji00IVkZOtMaCmO', o: 'https://youtu.be/3eytpBOkOFA?si=hKaFh-gYVhV-Ni2K' }
   },
@@ -1550,7 +1553,7 @@ export const animes: Anime[] = [
     video: { ja: 'https://youtu.be/vzZtU36yi8c?si=04egUWXBxmHLwT-A', o: 'https://youtu.be/RAxZogA4KCw?si=fDuD-epKRUXbf74w' }
   },
   {
-    names: ["Clannad: After story", "Clannad"], audio: "au_342", n: 1, pista: "Fall 2008",
+    names: ["Clannad: After story", "Clannad"], audio: "au_342", n: 2, pista: "Fall 2008",
     video: { ja: 'https://youtu.be/PozVlhR20TE?si=Asg8riUnQsIOn8id', f: 'https://youtu.be/E3wWC6Cfikg?si=cquj9kOO2xJVZko5' }
   },
   {
@@ -1558,7 +1561,8 @@ export const animes: Anime[] = [
     video: { ja: 'https://youtu.be/5N8MMn9uOdA?si=UjbpMgYX86Z94ele', f: 'https://youtu.be/G9eCjJ2ygCk?si=KW42XD4rCNbCYPru' }
   },
   {
-    names: ["Suzumiya Haruhi no Yuuutsu", "The Melancholy of Haruhi Suzumiya"], audio: "au_344", n: 1, pista: "Spring 2006",
+    names: ["Suzumiya Haruhi no Yuuutsu", "The Melancholy of Haruhi Suzumiya", "Haruhi Suzumiya"],
+    audio: "au_344", n: 1, pista: "Spring 2006",
     video: { ja: 'https://youtu.be/C337shIT9LI?si=iiaB-Uq5yD1aTcD7', o: 'https://youtu.be/8Ycasy9odq4?si=2mrGw_Ubjw7XSJkL' }
   },
   {
