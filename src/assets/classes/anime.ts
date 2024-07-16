@@ -333,7 +333,7 @@ export const animes: Anime[] = [
   },
   {
     names: ["Shigatsu wa Kimi no Uso", "Your Lie in April"], audio: "au_67", n: 1, pista: 'Fall 2014',
-    video: { ja: 'https://youtu.be/GqKbba2nOf0?si=E6L3lfsvRjhzK0-9', o: 'https://youtu.be/UpmSK1GPlBc?si=sgF9OvJu8NtyXUcN' }
+    video: { ja: 'https://youtu.be/fBsfD0Eytjw?si=OlboWV8haTAzwD6O', o: 'https://youtu.be/UpmSK1GPlBc?si=sgF9OvJu8NtyXUcN' }
   },
   {
     names: ["Yu Yu Hakusho", 'Yuu☆Yuu☆Hakusho', 'Yu Yu Hakusho: Ghost Files'], audio: "au_68", n: 1, pista: 'Fall 1992',
