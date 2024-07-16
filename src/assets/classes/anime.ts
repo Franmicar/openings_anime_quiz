@@ -406,7 +406,7 @@ export const animes: Anime[] = [
   },
   {
     names: ["Vinland Saga"], audio: "au_83", pista: "Summer 2019", n: 1,
-    video: { ja: 'https://youtu.be/xEVcTStgA4A?si=rUJKLXXuRY0vyg6f', o: 'https://youtu.be/5DjFpPSuGR0?si=K2kFTm24J7a1qBap' }
+    video: { ja: 'https://youtu.be/V0r5LTR2Ff4?si=ALtBeFfrGGnmlqfs', o: 'https://youtu.be/5DjFpPSuGR0?si=K2kFTm24J7a1qBap' }
   },
   {
     names: ["Akame ga Kill!"], audio: "au_84", pista: "Fall 2014", n: 2,
@@ -1012,7 +1012,7 @@ export const animes: Anime[] = [
     video: { ja: 'https://youtu.be/YcL-ymNCoZ8?si=W-q-6Fqt0xGnEWWJ', o: 'https://youtu.be/AzPWGoHvJsM?si=Vh4mfPfX8P1Dr6-j' }
   },
   {
-    names: ["Detective Conan", "Meitantei Conan", "Case Closed"], audio: "au_214", n: 50, pista: '941-964',
+    names: ["Detective Conan", "Meitantei Conan", "Case Closed"], audio: "au_214", n: 50, pista: '941 - 964',
     video: { ja: 'https://player.vimeo.com/video/983665104', f: 'https://youtu.be/KpSXQJtjsnk?si=O3K57RDxR8q3xT79' }
   },
   {
